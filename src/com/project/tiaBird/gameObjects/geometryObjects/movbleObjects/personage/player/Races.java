@@ -1,4 +1,4 @@
-package com.project.tiaBird.main.player;
+package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player;
 
 public abstract class Races {
 
@@ -8,6 +8,5 @@ public abstract class Races {
         this.character = character;
     }
 
-    abstract void getModifier();
     abstract String getSpecification();
 }

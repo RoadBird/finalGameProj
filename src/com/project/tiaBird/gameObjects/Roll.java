@@ -1,4 +1,4 @@
-package com.project.tiaBird.main;
+package com.project.tiaBird.gameObjects;
 
 import java.util.Random;
 
