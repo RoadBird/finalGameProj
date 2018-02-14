@@ -1,5 +1,5 @@
 package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage;
 
-public enum Ability{
+public enum Stat {
     STR, DEX, CON, INT, WIS, CHAR;
 }

@@ -1,7 +1,7 @@
 package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player;
 
-import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Abilities;
-import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Ability;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Stats;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Stat;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Personage;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Alignment;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.MovbleObject;
@@ -38,7 +38,7 @@ public abstract class Character extends Personage {
     private int countOfMaxKnowbleSpells = 0;
     private Set<Spell> spellKnowledge = new HashSet<>();
 
-    private Abilities abilities;
+    private Stats stats;
     private Races race;
     private Alignment alignment;
     private PlayerClass firstClass;
@@ -86,16 +86,16 @@ public abstract class Character extends Personage {
         this.race = race;
     }
 
-    public Abilities getAbilities() {
-        return abilities;
+    public Stats getStats() {
+        return stats;
     }
 
     public void setAbilities(int str, int dex, int con, int intel, int wis, int charsm) {
-        abilities = new Abilities(str, dex, con, intel, wis, charsm);
+        stats = new Stats(str, dex, con, intel, wis, charsm);
     }
 
-    public int getAbilityModifier(Ability ability) {
-        return getAbilities().getAbilityModifier(ability);
+    public int getAbilityModifier(Stat stat) {
+        return getStats().getAbilityModifier(stat);
     }
 
     public Weapon getWeapon1() {
