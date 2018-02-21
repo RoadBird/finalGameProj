@@ -1,11 +1,13 @@
 package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player;
 
-import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Stats;
-import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Stat;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.skills.Skill;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.stats.Stats;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.stats.StatEnum;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Personage;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.MovbleObject;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.playerClasses.PlayerClass;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.playerRaces.PlayerRace;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.traits.Trait;
 import com.project.tiaBird.gameObjects.specialSkills.SpecialSkills;
 import com.project.tiaBird.gameObjects.spells.Spell;
 import com.project.tiaBird.gameObjects.subjects.Subject;
@@ -23,6 +25,12 @@ public abstract class PlayerCharacter extends Personage {
     private int level = 0;
     private int experiencePoints = 0;
 
+    private Stats stats;
+    private PlayerRace playerRace;
+    private Set<PlayerClass> playerClasses= new HashSet<>();
+    private Set<Skill> skills = new HashSet<>();
+    private Set<Trait> traits = new HashSet<>();
+
     private MovbleObject target; //нацеленность персонажа на...
     private Weapon weapon1 = null;
     private Weapon weapon2 = null;
@@ -33,10 +41,6 @@ public abstract class PlayerCharacter extends Personage {
     private int countOfMaxKnowbleSpells = 0;
     private Set<Spell> spellKnowledge = new HashSet<>();
     private Set<SpecialSkills> specialSkills = new HashSet<>();
-
-    private Stats stats;
-    private PlayerRace playerRace;
-    private Set<PlayerClass> playerClasses= new HashSet<>();
 
     public abstract int getAllCheckSkill();
 
@@ -80,8 +84,8 @@ public abstract class PlayerCharacter extends Personage {
         stats = new Stats(str, dex, con, intel, wis, charsm);
     }
 
-    public int getAbilityModifier(Stat stat) {
-        return getStats().getAbilityModifier(stat);
+    public int getAbilityModifier(StatEnum statEnum) {
+        return getStats().getAbilityModifier(statEnum);
     }
 
     public Weapon getWeapon1() {
