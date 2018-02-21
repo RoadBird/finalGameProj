@@ -3,8 +3,10 @@ package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Stats;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Stat;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Personage;
-import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.Alignment;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.MovbleObject;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.playerClasses.PlayerClass;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.playerRaces.PlayerRace;
+import com.project.tiaBird.gameObjects.specialSkills.SpecialSkills;
 import com.project.tiaBird.gameObjects.spells.Spell;
 import com.project.tiaBird.gameObjects.subjects.Subject;
 import com.project.tiaBird.gameObjects.subjects.armores.Armor;
@@ -16,19 +18,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public abstract class Character extends Personage {
+public abstract class PlayerCharacter extends Personage {
 
-    private int health = 0;
     private int level = 0;
-    private int armorClass = 0;
-   // private int damage = 0;
-    private int radiusOfSee = 0;
     private int experiencePoints = 0;
-    private int gold = 0;
 
     private MovbleObject target; //нацеленность персонажа на...
-    private Object[] languages;
-    private Object god;
     private Weapon weapon1 = null;
     private Weapon weapon2 = null;
     private Armor armor = null;
@@ -37,12 +32,11 @@ public abstract class Character extends Personage {
     private int countOfSpellPerDay = 0;
     private int countOfMaxKnowbleSpells = 0;
     private Set<Spell> spellKnowledge = new HashSet<>();
+    private Set<SpecialSkills> specialSkills = new HashSet<>();
 
     private Stats stats;
-    private Races race;
-    private Alignment alignment;
-    private PlayerClass firstClass;
-    private PlayerClass secondClass;
+    private PlayerRace playerRace;
+    private Set<PlayerClass> playerClasses= new HashSet<>();
 
     public abstract int getAllCheckSkill();
 
@@ -70,20 +64,12 @@ public abstract class Character extends Personage {
         inventory.remove(thing);
     }
 
-    public Alignment getAlignment(){
-        return alignment;
+    public PlayerRace getPlayerRace() {
+        return playerRace;
     }
 
-    public void setAlignment(Alignment alignment){
-        this.alignment = alignment;
-    }
-
-    public Races getRace() {
-        return race;
-    }
-
-    public void setRace(Races race) {
-        this.race = race;
+    public void setPlayerRace(PlayerRace playerRace) {
+        this.playerRace = playerRace;
     }
 
     public Stats getStats() {
