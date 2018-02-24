@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.stats;
+package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.stats;
 
 public class Stats {
 
@@ -68,7 +68,7 @@ public class Stats {
         this.charisma = charisma;
     }
 
-    public int getAbilityModifier(StatEnum statEnum) {
+    public int getStatModifier(StatEnum statEnum) {
         int abilityScore = 0;
         switch (statEnum) {
             case STR: abilityScore = getStrength(); break;
