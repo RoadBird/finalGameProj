@@ -1,6 +1,6 @@
-package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage;
+package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.stats;
 
-public class Abilities {
+public class Stats {
 
     private int strength;
     private int dexterity;
@@ -9,7 +9,7 @@ public class Abilities {
     private int wisdom;
     private int charisma;
 
-    public Abilities(int str, int dex, int con, int intel, int wis, int charsm){
+    public Stats(int str, int dex, int con, int intel, int wis, int charsm){
         strength = str;
         dexterity = dex;
         constitution = con;
@@ -68,9 +68,9 @@ public class Abilities {
         this.charisma = charisma;
     }
 
-    public int getAbilityModifier(Ability ability) {
+    public int getAbilityModifier(StatEnum statEnum) {
         int abilityScore = 0;
-        switch (ability) {
+        switch (statEnum) {
             case STR: abilityScore = getStrength(); break;
             case DEX: abilityScore = getDexterity(); break;
             case CON: abilityScore = getConstitution(); break;

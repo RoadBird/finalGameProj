@@ -1,12 +1,14 @@
-package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player;
+package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.playerClasses;
+
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player.PlayerCharacter;
 
 public abstract class PlayerClass {
 
-    Character character;
+    PlayerCharacter playerCharacter;
     private int level;
 
-    public PlayerClass(Character character) {
-        this.character = character;
+    public PlayerClass(PlayerCharacter playerCharacter) {
+        this.playerCharacter = playerCharacter;
     }
 
     public abstract void leaveTheClass();

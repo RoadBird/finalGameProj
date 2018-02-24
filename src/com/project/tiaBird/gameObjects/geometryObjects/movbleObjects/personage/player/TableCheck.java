@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObjects;
+package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.player;
 
 public class TableCheck {
     private static int[][] normAttackThrow = {{0}, {1}, {2}, {3}, {3}, {4}, {5},
