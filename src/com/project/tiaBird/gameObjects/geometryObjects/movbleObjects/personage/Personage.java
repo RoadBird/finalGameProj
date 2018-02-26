@@ -1,7 +1,7 @@
 package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage;
 
 import com.project.tiaBird.gameObjects.SizeEnum;
-import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.MovbleObject;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.MovableObject;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.classes.PersonClass;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.modification.Modifications;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.personRaces.PlayerRace;
@@ -22,12 +22,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public abstract class Personage extends MovbleObject {
+public abstract class Personage extends MovableObject {
 
     private String name;
     private int level = 0;
     private int experiencePoints = 0;
-    private int speed = 0;
     private int health = 0;
     private int armorClass = 0;
     private int checkAttack = 0;
@@ -42,7 +41,7 @@ public abstract class Personage extends MovbleObject {
     private Set<SpecialSkills> specialSkills = new HashSet<>();
     private Modifications mods = new Modifications();
 
-    private MovbleObject target; //нацеленность персонажа на...
+    private MovableObject target; //нацеленность персонажа на...
     private Weapon weapon1 = null;
     private Weapon weapon2 = null;
     private Armor armor = null;

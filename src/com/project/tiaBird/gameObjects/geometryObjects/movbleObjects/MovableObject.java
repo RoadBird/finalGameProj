@@ -2,7 +2,7 @@ package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects;
 
 import com.project.tiaBird.gameObjects.geometryObjects.GeometryObject;
 
-public class MovbleObject extends GeometryObject {
+public class MovableObject extends GeometryObject {
     private int speed;
 
     public int getSpeed() {

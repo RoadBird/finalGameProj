@@ -9,7 +9,7 @@ public class Stats {
     private int wisdom;
     private int charisma;
 
-    public Stats(int str, int dex, int con, int intel, int wis, int charsm){
+    public Stats(int str, int dex, int con, int intel, int wis, int charsm) {
         strength = str;
         dexterity = dex;
         constitution = con;
@@ -71,12 +71,24 @@ public class Stats {
     public int getStatModifier(StatEnum statEnum) {
         int abilityScore = 0;
         switch (statEnum) {
-            case STR: abilityScore = getStrength(); break;
-            case DEX: abilityScore = getDexterity(); break;
-            case CON: abilityScore = getConstitution(); break;
-            case INT: abilityScore = getIntelligence(); break;
-            case WIS: abilityScore = getWisdom(); break;
-            case CHAR: abilityScore = getCharisma(); break;
+            case STR:
+                abilityScore = getStrength();
+                break;
+            case DEX:
+                abilityScore = getDexterity();
+                break;
+            case CON:
+                abilityScore = getConstitution();
+                break;
+            case INT:
+                abilityScore = getIntelligence();
+                break;
+            case WIS:
+                abilityScore = getWisdom();
+                break;
+            case CHAR:
+                abilityScore = getCharisma();
+                break;
         }
         if (abilityScore <= 1)
             return -5;
@@ -85,5 +97,18 @@ public class Stats {
         else if (abilityScore > 11)
             return (abilityScore - 10) / 2;
         else return 0;
+    }
+
+    public int getCountOfSpellModifier(StatEnum statEnum, int spellLvl) {
+        int t = getStatModifier(statEnum);
+        if (t < 0) {
+            return -1;
+        } else if(spellLvl == 0) {
+            return 0;
+        }else if(spellLvl > t){
+            return 0;
+        } else {
+            return (t - spellLvl)/4 + 1;
+        }
     }
 }

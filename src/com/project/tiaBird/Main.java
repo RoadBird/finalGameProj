@@ -2,7 +2,7 @@ package com.project.tiaBird;
 
 public class Main {
 
-    public Main(){
+    public Main() {
 
     }
 
