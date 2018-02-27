@@ -18,54 +18,89 @@ public class Stats {
         charisma = charsm;
     }
 
-    public int getStrength() {
+    private int getStrength() {
         return strength;
     }
 
-    public void setStrength(int strength) {
+    private void setStrength(int strength) {
         this.strength = strength;
     }
 
-    public int getDexterity() {
+    private int getDexterity() {
         return dexterity;
     }
 
-    public void setDexterity(int dexterity) {
+    private void setDexterity(int dexterity) {
         this.dexterity = dexterity;
     }
 
-    public int getConstitution() {
+    private int getConstitution() {
         return constitution;
     }
 
-    public void setConstitution(int constitution) {
+    private void setConstitution(int constitution) {
         this.constitution = constitution;
     }
 
-    public int getIntelligence() {
+    private int getIntelligence() {
         return intelligence;
     }
 
-    public void setIntelligence(int intelligence) {
+    private void setIntelligence(int intelligence) {
         if (intelligence < 3)
             intelligence = 3;
         this.intelligence = intelligence;
     }
 
-    public int getWisdom() {
+    private int getWisdom() {
         return wisdom;
     }
 
-    public void setWisdom(int wisdom) {
+    private void setWisdom(int wisdom) {
         this.wisdom = wisdom;
     }
 
-    public int getCharisma() {
+    private int getCharisma() {
         return charisma;
     }
 
-    public void setCharisma(int charisma) {
+    private void setCharisma(int charisma) {
         this.charisma = charisma;
+    }
+
+    public void setStat(StatEnum statEnum, int count){
+        switch (statEnum) {
+            case STR:
+                strength += count;
+            case DEX:
+                dexterity += count;
+            case CON:
+                constitution += count;
+            case INT:
+                intelligence += count;
+            case WIS:
+                wisdom += count;
+            case CHAR:
+                charisma += count;
+        }
+    }
+
+    public int getStat(StatEnum statEnum) {
+        switch (statEnum) {
+            case STR:
+                return getStrength();
+            case DEX:
+                return getDexterity();
+            case CON:
+                return getConstitution();
+            case INT:
+                return getIntelligence();
+            case WIS:
+                return getWisdom();
+            case CHAR:
+                return getCharisma();
+        }
+        return 0;
     }
 
     public int getStatModifier(StatEnum statEnum) {

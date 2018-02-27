@@ -17,10 +17,7 @@ import com.project.tiaBird.gameObjects.subjects.armores.Armor;
 import com.project.tiaBird.gameObjects.subjects.shields.Shield;
 import com.project.tiaBird.gameObjects.subjects.weapons.Weapon;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public abstract class Personage extends MovableObject {
 
@@ -49,8 +46,9 @@ public abstract class Personage extends MovableObject {
     private List<Subject> inventory = new LinkedList<>();
     private int countOfSpellPerDay = 0;
     private int countOfUsedSpellInThisDey = 0;
-    private int countOfMaxKnowbleSpells = 0;
-    private Set<Spell> spellKnowledge = new HashSet<>();
+    private StatEnum mainStatToSpellCount = null;
+    private int[] countOfMaxKnowbleSpells = new int[10];
+    private Map<Integer, Set<Spell>> spellBook = new HashMap<>();
 
     private Object[] languages;
     private God god;
@@ -62,6 +60,13 @@ public abstract class Personage extends MovableObject {
 
     private String story;
     private Alignment alignment;
+
+    public Personage() {
+        stats = new Stats(10,10,10,10,10,10);
+        for (int i = 0; i < 10; i++) {
+            spellBook.put(i, new HashSet<>());
+        }
+    }
 
     public abstract int getCheckSkill();
 
@@ -75,18 +80,17 @@ public abstract class Personage extends MovableObject {
 
     public abstract int getSpellsPerDay();
 
-    public void addSpell(Spell spell){
-        if(countOfMaxKnowbleSpells < spellKnowledge.size()){
-            spellKnowledge.add(spell);
-        }
-        else System.out.println("Max limit of knowledge spell");
+    public void addSpell(Spell spell) {
+        if (countOfMaxKnowbleSpells[spell.getLevel()] < spellBook.get(spell.getLevel()).size()) {
+            spellBook.get(spell.getLevel()).add(spell);
+        } else System.out.println("Max limit of knowledge spell");
     }
 
-    public void addSubject(Subject thing){
+    public void addSubject(Subject thing) {
         inventory.add(thing);
     }
 
-    public void removeSubject(Subject thing){
+    public void removeSubject(Subject thing) {
         inventory.remove(thing);
     }
 
@@ -98,16 +102,25 @@ public abstract class Personage extends MovableObject {
         this.playerRace = playerRace;
     }
 
-    public Stats getStats() {
-        return stats;
-    }
-
     public void setStats(int str, int dex, int con, int intel, int wis, int charsm) {
         stats = new Stats(str, dex, con, intel, wis, charsm);
+        if(mainStatToSpellCount != null)
+            toCountMaxKnowbleSpell(mainStatToSpellCount);
+    }
+
+    public int getStat(StatEnum statEnum) {
+        return stats.getStat(statEnum);
+    }
+
+    public void setStat(StatEnum stat, int count) {
+        stats.setStat(stat, count);
+        if(mainStatToSpellCount != null && stat.equals(mainStatToSpellCount)) {
+            toCountMaxKnowbleSpell(mainStatToSpellCount);
+        }
     }
 
     public int getStatModifier(StatEnum statEnum) {
-        return getStats().getStatModifier(statEnum);
+        return stats.getStatModifier(statEnum);
     }
 
     public Weapon getWeapon1() {
@@ -142,10 +155,19 @@ public abstract class Personage extends MovableObject {
         this.shield = shield;
     }
 
-    public Alignment getAlignment(){
+    public Alignment getAlignment() {
         return alignment;
     }
-    public void setAlignment(Alignment alignment){
+
+    public void setAlignment(Alignment alignment) {
         this.alignment = alignment;
+    }
+
+    private void toCountMaxKnowbleSpell(StatEnum stat) {
+        if (stat != null) {
+            for (int i = 0; i < countOfMaxKnowbleSpells.length; i++) {
+                countOfMaxKnowbleSpells[i] = stats.getCountOfSpellModifier(stat, i);
+            }
+        }
     }
 }
