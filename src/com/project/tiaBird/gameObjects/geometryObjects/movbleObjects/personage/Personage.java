@@ -1,15 +1,16 @@
 package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage;
 
-import com.project.tiaBird.gameObjects.SizeEnum;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.MovableObject;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.classes.PersonClass;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.modification.Modifications;
-import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.personRaces.PlayerRace;
-import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.skills.Skill;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.personRaces.Human;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.personRaces.PersonRace;
+import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.skills.Skills;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.stats.StatEnum;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.stats.Stats;
 import com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.traits.Trait;
 import com.project.tiaBird.gameObjects.gods.God;
+import com.project.tiaBird.gameObjects.languages.LanguageEnum;
 import com.project.tiaBird.gameObjects.specialSkills.SpecialSkills;
 import com.project.tiaBird.gameObjects.spells.Spell;
 import com.project.tiaBird.gameObjects.subjects.Subject;
@@ -19,7 +20,7 @@ import com.project.tiaBird.gameObjects.subjects.weapons.Weapon;
 
 import java.util.*;
 
-public abstract class Personage extends MovableObject {
+public class Personage extends MovableObject {
 
     private String name;
     private int level = 0;
@@ -28,15 +29,17 @@ public abstract class Personage extends MovableObject {
     private int armorClass = 0;
     private int checkAttack = 0;
     private int radiusOfSee = 0;
-    private SizeEnum size = null;
+    private CreatureSizeEnum size;
 
     private Stats stats;
-    private PlayerRace playerRace;
+    private PersonRace personRace;
     private Set<PersonClass> personClasses = new HashSet<>();
-    private Set<Skill> skills = new HashSet<>();
+    private Skills skills;
     private Set<Trait> traits = new HashSet<>();
+    private Set<LanguageEnum> languages = new HashSet<>();
+    private Modifications mods;
+
     private Set<SpecialSkills> specialSkills = new HashSet<>();
-    private Modifications mods = new Modifications();
 
     private MovableObject target; //нацеленность персонажа на...
     private Weapon weapon1 = null;
@@ -46,11 +49,11 @@ public abstract class Personage extends MovableObject {
     private List<Subject> inventory = new LinkedList<>();
     private int countOfSpellPerDay = 0;
     private int countOfUsedSpellInThisDey = 0;
-    private StatEnum mainStatToSpellCount = null;
+    private StatEnum mainStatToMAXSpellCount = null;
     private int[] countOfMaxKnowbleSpells = new int[10];
     private Map<Integer, Set<Spell>> spellBook = new HashMap<>();
 
-    private Object[] languages;
+
     private God god;
 
     private int bronze = 0;
@@ -61,29 +64,39 @@ public abstract class Personage extends MovableObject {
     private String story;
     private Alignment alignment;
 
-    public Personage() {
-        stats = new Stats(10,10,10,10,10,10);
-        for (int i = 0; i < 10; i++) {
-            spellBook.put(i, new HashSet<>());
-        }
+    private Personage() {
     }
 
-    public abstract int getCheckSkill();
+//    public abstract int getCheckSkill();
+//
+//    public abstract int getPointAttack();
+//
+//    public abstract int getSavingThrowFortitude();
+//
+//    public abstract int getSavingThrowReflex();
+//
+//    public abstract int getSavingThrowWill();
+//
+//    public abstract int getSpellsPerDay();
 
-    public abstract int getPointAttack();
-
-    public abstract int getSavingThrowFortitude();
-
-    public abstract int getSavingThrowReflex();
-
-    public abstract int getSavingThrowWill();
-
-    public abstract int getSpellsPerDay();
+    public Set<LanguageEnum> getLanguages() {
+        return languages;
+    }
+    public void addLanguages(LanguageEnum language) {
+        languages.add(language);
+    }
 
     public void addSpell(Spell spell) {
         if (countOfMaxKnowbleSpells[spell.getLevel()] < spellBook.get(spell.getLevel()).size()) {
             spellBook.get(spell.getLevel()).add(spell);
         } else System.out.println("Max limit of knowledge spell");
+    }
+
+    public Modifications getMods() {
+        return mods;
+    }
+    public void setMods(Modifications mods) {
+        this.mods = mods;
     }
 
     public void addSubject(Subject thing) {
@@ -94,65 +107,37 @@ public abstract class Personage extends MovableObject {
         inventory.remove(thing);
     }
 
-    public PlayerRace getPlayerRace() {
-        return playerRace;
+    public PersonRace getPersonRace() {
+        return personRace;
     }
 
-    public void setPlayerRace(PlayerRace playerRace) {
-        this.playerRace = playerRace;
+    public void setPersonRace(PersonRace personRace) {
+        this.personRace = personRace;
     }
 
     public void setStats(int str, int dex, int con, int intel, int wis, int charsm) {
         stats = new Stats(str, dex, con, intel, wis, charsm);
-        if(mainStatToSpellCount != null)
-            toCountMaxKnowbleSpell(mainStatToSpellCount);
+        if(mainStatToMAXSpellCount != null)
+            toCountMaxKnowbleSpell(mainStatToMAXSpellCount);
     }
-
     public int getStat(StatEnum statEnum) {
         return stats.getStat(statEnum);
     }
-
-    public void setStat(StatEnum stat, int count) {
-        stats.setStat(stat, count);
-        if(mainStatToSpellCount != null && stat.equals(mainStatToSpellCount)) {
-            toCountMaxKnowbleSpell(mainStatToSpellCount);
+    public void appendStat(StatEnum stat, int count) {
+        stats.appendStat(stat, count);
+        if(mainStatToMAXSpellCount != null && stat.equals(mainStatToMAXSpellCount)) {
+            toCountMaxKnowbleSpell(mainStatToMAXSpellCount);
         }
     }
-
     public int getStatModifier(StatEnum statEnum) {
         return stats.getStatModifier(statEnum);
     }
 
-    public Weapon getWeapon1() {
-        return weapon1;
+    public CreatureSizeEnum getSize() {
+        return size;
     }
-
-    public void setWeapon1(Weapon weapon1) {
-        this.weapon1 = weapon1;
-    }
-
-    public Weapon getWeapon2() {
-        return weapon2;
-    }
-
-    public void setWeapon2(Weapon weapon2) {
-        this.weapon2 = weapon2;
-    }
-
-    public Armor getArmor() {
-        return armor;
-    }
-
-    public void setArmor(Armor armor) {
-        this.armor = armor;
-    }
-
-    public Shield getShield() {
-        return shield;
-    }
-
-    public void setShield(Shield shield) {
-        this.shield = shield;
+    public void setSize(CreatureSizeEnum size) {
+        this.size = size;
     }
 
     public Alignment getAlignment() {
@@ -169,5 +154,41 @@ public abstract class Personage extends MovableObject {
                 countOfMaxKnowbleSpells[i] = stats.getCountOfSpellModifier(stat, i);
             }
         }
+    }
+    public static class Builder{
+        private Personage personage = new Personage();
+        public Builder(){
+            personage.stats = new Stats();
+            personage.skills = new Skills();
+            personage.mods = new Modifications();
+            personage.personRace = new Human(personage);
+            for (int i = 0; i < 10; i++) {
+                personage.spellBook.put(i, new HashSet<>());
+            }
+        }
+        public Builder setStats(Stats stats){
+            personage.stats = stats;
+            return this;
+        }
+        public Builder setRace(PersonRace race){
+            personage.personRace = race;
+            return this;
+        }
+        public Builder setClasses(Set<PersonClass> personClasses){
+            personage.personClasses = personClasses;
+            return this;
+        }
+        public Builder setSkills(Skills skills){
+            personage.skills = skills;
+            return this;
+        }
+        public Builder setMods(Modifications mods){
+            personage.mods = mods;
+            return this;
+        }
+        public Personage getPersonage(){
+            return personage;
+        }
+
     }
 }

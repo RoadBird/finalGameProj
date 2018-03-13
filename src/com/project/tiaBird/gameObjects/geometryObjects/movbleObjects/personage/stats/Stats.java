@@ -1,130 +1,46 @@
 package com.project.tiaBird.gameObjects.geometryObjects.movbleObjects.personage.stats;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Stats {
 
-    private int strength;
-    private int dexterity;
-    private int constitution;
-    private int intelligence;
-    private int wisdom;
-    private int charisma;
+    private Map<StatEnum, Integer> statsMap;
+
+    public Stats(){
+        statsMap = new HashMap();
+        StatEnum[] stats = StatEnum.values();
+        for (int i = 0; i < stats.length; i++) {
+            statsMap.put(stats[i], 0);
+        }
+    }
 
     public Stats(int str, int dex, int con, int intel, int wis, int charsm) {
-        strength = str;
-        dexterity = dex;
-        constitution = con;
-        intelligence = intel;
-        wisdom = wis;
-        charisma = charsm;
+        statsMap = new HashMap();
+        statsMap.put(StatEnum.STR, str);
+        statsMap.put(StatEnum.DEX, dex);
+        statsMap.put(StatEnum.CON, con);
+        statsMap.put(StatEnum.INT, intel);
+        statsMap.put(StatEnum.WIS, wis);
+        statsMap.put(StatEnum.CHAR, charsm);
     }
 
-    private int getStrength() {
-        return strength;
-    }
-
-    private void setStrength(int strength) {
-        this.strength = strength;
-    }
-
-    private int getDexterity() {
-        return dexterity;
-    }
-
-    private void setDexterity(int dexterity) {
-        this.dexterity = dexterity;
-    }
-
-    private int getConstitution() {
-        return constitution;
-    }
-
-    private void setConstitution(int constitution) {
-        this.constitution = constitution;
-    }
-
-    private int getIntelligence() {
-        return intelligence;
-    }
-
-    private void setIntelligence(int intelligence) {
-        if (intelligence < 3)
-            intelligence = 3;
-        this.intelligence = intelligence;
-    }
-
-    private int getWisdom() {
-        return wisdom;
-    }
-
-    private void setWisdom(int wisdom) {
-        this.wisdom = wisdom;
-    }
-
-    private int getCharisma() {
-        return charisma;
-    }
-
-    private void setCharisma(int charisma) {
-        this.charisma = charisma;
-    }
-
-    public void setStat(StatEnum statEnum, int count){
-        switch (statEnum) {
-            case STR:
-                strength += count;
-            case DEX:
-                dexterity += count;
-            case CON:
-                constitution += count;
-            case INT:
-                intelligence += count;
-            case WIS:
-                wisdom += count;
-            case CHAR:
-                charisma += count;
+    public void appendStat(StatEnum statEnum, int count){
+        statsMap.put(statEnum, statsMap.get(statEnum) + count);
+        if(statEnum.equals(StatEnum.INT) && statsMap.get(StatEnum.INT) < 3){
+            statsMap.put(StatEnum.INT, 3);
+        }
+        if(statsMap.get(statEnum) < 0){
+            statsMap.put(statEnum, 0);
         }
     }
 
     public int getStat(StatEnum statEnum) {
-        switch (statEnum) {
-            case STR:
-                return getStrength();
-            case DEX:
-                return getDexterity();
-            case CON:
-                return getConstitution();
-            case INT:
-                return getIntelligence();
-            case WIS:
-                return getWisdom();
-            case CHAR:
-                return getCharisma();
-        }
-        return 0;
+        return statsMap.get(statEnum);
     }
 
     public int getStatModifier(StatEnum statEnum) {
-        int abilityScore = 0;
-        switch (statEnum) {
-            case STR:
-                abilityScore = getStrength();
-                break;
-            case DEX:
-                abilityScore = getDexterity();
-                break;
-            case CON:
-                abilityScore = getConstitution();
-                break;
-            case INT:
-                abilityScore = getIntelligence();
-                break;
-            case WIS:
-                abilityScore = getWisdom();
-                break;
-            case CHAR:
-                abilityScore = getCharisma();
-                break;
-        }
+        int abilityScore = statsMap.get(statEnum);
         if (abilityScore <= 1)
             return -5;
         if (abilityScore < 11)
