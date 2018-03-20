@@ -2,7 +2,7 @@ package com.project.tiaBird.gameObject.geometryObject;
 
 import com.project.tiaBird.gameObject.GameObject;
 
-public class GeometryObject extends GameObject {
+public class  GeometryObject extends GameObject {
     private int x;
     private int y;
 
