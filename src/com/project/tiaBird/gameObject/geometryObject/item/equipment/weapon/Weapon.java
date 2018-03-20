@@ -1,5 +1,6 @@
 package com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon;
 
+import com.project.tiaBird.gameObject.Roll;
 import com.project.tiaBird.gameObject.geometryObject.item.Money;
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.Equipment;
 
@@ -10,7 +11,7 @@ public class Weapon extends Equipment {
     private WeaponUsage weaponUsage;
 
     private double range;
-    private int damage;
+    private Roll damage;
     private int critChance;
     private int critMultiplier;
     private int accuracy;
@@ -82,11 +83,11 @@ public class Weapon extends Equipment {
         }
     }
 
-    public int getDamage() {
+    public Roll getDamage() {
         return damage;
     }
 
-    public void setDamage(int damage) {
+    public void setDamage(Roll damage) {
         this.damage = damage;
     }
 

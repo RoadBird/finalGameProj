@@ -1,8 +1,8 @@
 package com.project.tiaBird.gameObject.geometryObject.item;
 
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.Equipment;
+import com.project.tiaBird.gameObject.geometryObject.GeometryObject;
 
-public class Money extends Equipment {
+public class Money extends GeometryObject {
 
     private int bronze = 0;
     private int silver = 0;

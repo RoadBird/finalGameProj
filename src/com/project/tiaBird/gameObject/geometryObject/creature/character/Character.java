@@ -1,16 +1,17 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character;
 
-import com.project.tiaBird.gameObject.geometryObject.creature.CreatureSize;
-import com.project.tiaBird.gameObject.geometryObject.item.Money;
 import com.project.tiaBird.gameObject.geometryObject.creature.Creature;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.PersonClass;
+import com.project.tiaBird.gameObject.geometryObject.creature.CreatureSize;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.AbstractPersonClass;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.Modification;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.Human;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.PersonRace;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.Stat;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.StatEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.trait.Trait;
+import com.project.tiaBird.gameObject.geometryObject.item.Money;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.PersonFullClass;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.PersonRace;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.Stat;
 import com.project.tiaBird.gameObject.god.God;
 import com.project.tiaBird.gameObject.language.LanguageEnum;
 import com.project.tiaBird.gameObject.specialSkill.SpecialSkill;
@@ -32,7 +33,7 @@ public class Character extends Creature {
     private CreatureSize size;
 
     private PersonRace personRace;
-    private Set<PersonClass> personClasses = new HashSet<>();
+    private PersonFullClass personFullClass = new PersonFullClass(this);
     private Stat stat;
     private Skill skill;
     private Set<Trait> traits = new HashSet<>();
@@ -157,8 +158,8 @@ public class Character extends Creature {
             character.personRace = race;
             return this;
         }
-        public Builder setClasses(Set<PersonClass> personClasses){
-            character.personClasses = personClasses;
+        public Builder setClasses(AbstractPersonClass personClass){
+            character.personFullClass.newClass(personClass);
             return this;
         }
         public Builder setSkills(Skill skill){

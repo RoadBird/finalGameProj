@@ -1,6 +1,8 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character;
 
-public class TableCheck {
+import com.project.tiaBird.gameObject.GameObject;
+
+public class TableCheck extends GameObject {
     private static int[][] normAttackThrow = {{0}, {1}, {2}, {3}, {3}, {4}, {5},
             {6, 1}, {6, 1}, {7, 2}, {8, 3}, {9, 4}, {9, 4}, {10, 5},
             {11, 6, 1}, {12, 7, 2}, {12, 7, 2}, {13, 8, 3}, {14, 9, 4}, {15, 10, 5}};

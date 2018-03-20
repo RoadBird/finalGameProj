@@ -2,12 +2,12 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.classes
 
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 
-public abstract class PersonClass {
+public abstract class AbstractPersonClass {
 
     Character character;
     private int level;
 
-    public PersonClass(Character character) {
+    public AbstractPersonClass(Character character) {
         this.character = character;
     }
 
@@ -18,6 +18,4 @@ public abstract class PersonClass {
     public int getLevel() {
         return level;
     }
-
-
 }

@@ -1,12 +1,13 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character;
 
+import com.project.tiaBird.gameObject.GameObject;
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.accessory.Necklace;
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.accessory.Ring;
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.armor.Armor;
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.armor.Shield;
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.Weapon;
 
-public class Arming {
+public class Arming extends GameObject{
     private Weapon weapon1;
     private Weapon weapon2;
     private Ring ring1;

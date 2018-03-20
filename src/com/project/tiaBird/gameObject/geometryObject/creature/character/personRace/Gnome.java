@@ -1,8 +1,8 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character.personRace;
 
 import com.project.tiaBird.gameObject.geometryObject.creature.CreatureSize;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.StatEnum;
 
 public class Gnome extends PersonRace {
