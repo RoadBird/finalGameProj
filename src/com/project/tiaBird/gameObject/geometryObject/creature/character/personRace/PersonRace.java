@@ -2,14 +2,12 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.personR
 
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 
-public abstract class PersonRace {
+public class PersonRace {
 
     Character character;
 
     public PersonRace(Character character){
         this.character = character;
     }
-
-    public abstract void initialize();
 
 }

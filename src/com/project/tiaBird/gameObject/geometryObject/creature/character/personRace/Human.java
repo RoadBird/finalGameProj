@@ -8,10 +8,6 @@ public class Human extends PersonRace {
 
     public Human(Character character) {
         super(character);
-    }
-
-    @Override
-    public void initialize() {
         character.setSize(CreatureSize.MEDIUM);
         character.setSpeed(9);
         character.addLanguages(LanguageEnum.Common);

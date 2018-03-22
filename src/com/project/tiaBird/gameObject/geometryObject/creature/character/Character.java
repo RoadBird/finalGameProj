@@ -14,7 +14,7 @@ import com.project.tiaBird.gameObject.geometryObject.creature.character.personRa
 import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.Stat;
 import com.project.tiaBird.gameObject.god.God;
 import com.project.tiaBird.gameObject.language.LanguageEnum;
-import com.project.tiaBird.gameObject.specialSkill.SpecialSkill;
+import com.project.tiaBird.gameObject.spell.specialSpell.SpecialSpell;
 import com.project.tiaBird.gameObject.spell.Spell;
 
 import java.util.HashMap;
@@ -40,7 +40,7 @@ public class Character extends Creature {
     private Set<LanguageEnum> languages = new HashSet<>();
     private Modification mods;
 
-    private Set<SpecialSkill> specialSkills = new HashSet<>();
+    private Set<SpecialSpell> specialSpells = new HashSet<>();
 
     private Creature target; //нацеленность персонажа на...
     private int countOfSpellPerDay = 0;
@@ -57,8 +57,7 @@ public class Character extends Creature {
 
     private String story;
 
-    private Character() {
-    }
+    private Character() {}
 
 //    public abstract int getCheckSkill();
 //
@@ -99,11 +98,6 @@ public class Character extends Creature {
         this.personRace = personRace;
     }
 
-    public void setStats(int str, int dex, int con, int intel, int wis, int charsm) {
-        stat = new Stat(str, dex, con, intel, wis, charsm);
-        if(mainStatToMAXSpellCount != null)
-            toCountMaxKnowbleSpell(mainStatToMAXSpellCount);
-    }
     public int getStat(StatEnum statEnum) {
         return stat.getStat(statEnum);
     }
@@ -145,6 +139,7 @@ public class Character extends Creature {
             character.stat = new Stat();
             character.skill = new Skill();
             character.mods = new Modification();
+            character.personFullClass = new PersonFullClass(character);
             character.personRace = new Human(character);
             for (int i = 0; i < 10; i++) {
                 character.spellBook.put(i, new HashSet<>());
@@ -158,16 +153,16 @@ public class Character extends Creature {
             character.personRace = race;
             return this;
         }
-        public Builder setClasses(AbstractPersonClass personClass){
-            character.personFullClass.newClass(personClass);
-            return this;
-        }
         public Builder setSkills(Skill skill){
             character.skill = skill;
             return this;
         }
         public Builder setMods(Modification mods){
             character.mods = mods;
+            return this;
+        }
+        public Builder addNewPersonClass(AbstractPersonClass personClass){
+            character.personFullClass.newClass(personClass);
             return this;
         }
         public Character getCharacter(){

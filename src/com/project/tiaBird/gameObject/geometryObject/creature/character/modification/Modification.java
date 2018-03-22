@@ -1,13 +1,10 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character.modification;
 
 import com.project.tiaBird.gameObject.GameObject;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.ModOfAttackWith;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.ModOfDefeceFromPerson;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.*;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.StatEnum;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.ModOfAttackAgainst;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.ModOfDefenceFromSpell;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.Stat;
 
 import java.util.LinkedList;
@@ -24,6 +21,7 @@ public class Modification extends GameObject {
     private List<ModOfAttackWith> modOfAttackWiths = new LinkedList<>();
     private List<ModOfDefeceFromPerson> modOfDefeceFromPersons = new LinkedList<>();
     private List<ModOfDefenceFromSpell> modOfDefenceFromSpells = new LinkedList<>();
+    private List<ModOfCastSpell> modOfCastSpells = new LinkedList<>();
     private Stat statMod = new Stat();
     private Skill skillMod = new Skill();
 
@@ -121,6 +119,18 @@ public class Modification extends GameObject {
 
     public void removeModOfDefenceFromSpells(ModOfDefenceFromSpell modOfDefenceFromSpells) {
         this.modOfDefenceFromSpells.remove(modOfDefenceFromSpells);
+    }
+
+    public List<ModOfCastSpell> getModOfCastSpells() {
+        return modOfCastSpells;
+    }
+
+    public void addModOfCastSpells(ModOfCastSpell modOfCastSpells) {
+        this.modOfCastSpells.add(modOfCastSpells);
+    }
+
+    public void removeModOfCastSpells(ModOfCastSpell modOfCastSpells) {
+        this.modOfCastSpells.remove(modOfCastSpells);
     }
 
     public int getStatsMod(StatEnum stat) {
