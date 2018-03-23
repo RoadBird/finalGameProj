@@ -1,15 +1,15 @@
-package com.project.tiaBird.gameObject.spell.spellLikeAbility;
+package com.project.tiaBird.gameObject.effect.spell.spellLikeAbility;
 
-import com.project.tiaBird.gameObject.GameObject;
 import com.project.tiaBird.gameObject.geometryObject.creature.Creature;
-import com.project.tiaBird.gameObject.spell.Spell;
+import com.project.tiaBird.gameObject.effect.spell.Spell;
 
-public abstract class SpellLikeAbility extends GameObject {
+public abstract class SpellLikeAbility extends Spell {
     protected Creature creature;
     private Spell spell;
     private FrequencyTimeEnum time;
 
     public SpellLikeAbility(Creature creature, Spell spell, FrequencyTimeEnum time) {
+        super(spell.getLevel());
         this.creature = creature;
         this.spell = spell;
         this.time = time;

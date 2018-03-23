@@ -1,8 +1,8 @@
-package com.project.tiaBird.gameObject.spell.spellLikeAbility;
+package com.project.tiaBird.gameObject.effect.spell.spellLikeAbility;
 
 import com.project.tiaBird.gameObject.geometryObject.creature.Creature;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
-import com.project.tiaBird.gameObject.spell.Prestidigitation;
+import com.project.tiaBird.gameObject.effect.spell.Prestidigitation;
 
 public class AbilityPrestidigitation extends SpellLikeAbility {
     public AbilityPrestidigitation(Creature creature, int spellLevel, FrequencyTimeEnum time) {

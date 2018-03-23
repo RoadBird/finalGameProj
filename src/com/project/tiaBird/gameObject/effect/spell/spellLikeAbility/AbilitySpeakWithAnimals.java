@@ -1,7 +1,7 @@
-package com.project.tiaBird.gameObject.spell.spellLikeAbility;
+package com.project.tiaBird.gameObject.effect.spell.spellLikeAbility;
 
 import com.project.tiaBird.gameObject.geometryObject.creature.Creature;
-import com.project.tiaBird.gameObject.spell.SpeakWithAnimals;
+import com.project.tiaBird.gameObject.effect.spell.SpeakWithAnimals;
 
 public class AbilitySpeakWithAnimals extends SpellLikeAbility {
     public AbilitySpeakWithAnimals(Creature creature, int spellLevel, FrequencyTimeEnum time) {

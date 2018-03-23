@@ -5,16 +5,16 @@ import com.project.tiaBird.gameObject.geometryObject.creature.CreatureSize;
 import com.project.tiaBird.gameObject.geometryObject.creature.CreatureTypeEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.CreatureVisionType;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.ModOfCastSpell;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.ModOfDefeceFromPerson;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.ModOfDefenceFromPerson;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.ModOfDefenceFromSpell;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
 import com.project.tiaBird.gameObject.language.LanguageEnum;
-import com.project.tiaBird.gameObject.spell.*;
-import com.project.tiaBird.gameObject.spell.spellLikeAbility.*;
+import com.project.tiaBird.gameObject.effect.spell.*;
+import com.project.tiaBird.gameObject.effect.spell.spellLikeAbility.*;
 
-public class Gnome extends PersonRace implements ModOfDefenceFromSpell, ModOfCastSpell, ModOfDefeceFromPerson{
+public class Gnome extends PersonRace implements ModOfDefenceFromSpell, ModOfCastSpell, ModOfDefenceFromPerson {
 
     public Gnome(Character character) {
         super(character);
@@ -56,7 +56,7 @@ public class Gnome extends PersonRace implements ModOfDefenceFromSpell, ModOfCas
     @Override
     public void setModOfCastSpell(Spell spell) {
         if(spell.getType() == SpellTypeEnum.ILLUSION){
-            spell.appendComplexityClass(1);
+            spell.appendDifficultyClass(1);
         }
     }
 

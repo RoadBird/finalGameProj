@@ -1,11 +1,11 @@
-package com.project.tiaBird.gameObject.spell.spellLikeAbility;
+package com.project.tiaBird.gameObject.effect.spell.spellLikeAbility;
 
 import com.project.tiaBird.gameObject.geometryObject.creature.Creature;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
-import com.project.tiaBird.gameObject.spell.DancingLights;
+import com.project.tiaBird.gameObject.effect.spell.DancingLights;
 
-public class AbilityGhostSound extends SpellLikeAbility {
-    public AbilityGhostSound(Creature creature, int spellLevel, FrequencyTimeEnum time) {
+public class AbilityDancingLights extends SpellLikeAbility {
+    public AbilityDancingLights(Creature creature, int spellLevel, FrequencyTimeEnum time) {
         super(creature, new DancingLights(spellLevel), time);
     }
 

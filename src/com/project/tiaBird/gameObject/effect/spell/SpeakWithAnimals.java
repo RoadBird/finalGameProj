@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObject.spell;
+package com.project.tiaBird.gameObject.effect.spell;
 
 public class SpeakWithAnimals extends Spell {
 

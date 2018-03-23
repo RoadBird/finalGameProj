@@ -16,12 +16,10 @@ import com.project.tiaBird.gameObject.geometryObject.creature.stat.Stat;
 import com.project.tiaBird.gameObject.geometryObject.item.SpellBook;
 import com.project.tiaBird.gameObject.god.God;
 import com.project.tiaBird.gameObject.language.LanguageEnum;
-import com.project.tiaBird.gameObject.spell.spellLikeAbility.SpellLikeAbility;
-import com.project.tiaBird.gameObject.spell.Spell;
+import com.project.tiaBird.gameObject.effect.spell.spellLikeAbility.SpellLikeAbility;
+import com.project.tiaBird.gameObject.effect.spell.Spell;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class Character extends Creature {

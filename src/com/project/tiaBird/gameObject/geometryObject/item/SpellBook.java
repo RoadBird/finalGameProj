@@ -1,7 +1,7 @@
 package com.project.tiaBird.gameObject.geometryObject.item;
 
 import com.project.tiaBird.gameObject.geometryObject.GeometryObject;
-import com.project.tiaBird.gameObject.spell.Spell;
+import com.project.tiaBird.gameObject.effect.spell.Spell;
 
 import java.util.HashMap;
 import java.util.HashSet;

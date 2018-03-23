@@ -2,6 +2,6 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.modific
 
 import com.project.tiaBird.gameObject.geometryObject.creature.Creature;
 
-public interface ModOfDefeceFromPerson extends ModificationListener {
+public interface ModOfDefenceFromPerson extends ModificationListener {
     int getDefenceModification(Creature target);
 }
