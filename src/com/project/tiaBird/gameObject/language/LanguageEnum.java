@@ -1,7 +1,7 @@
 package com.project.tiaBird.gameObject.language;
 
 public enum LanguageEnum {
-    Common, Dethek, Espruar, Ruathlek, Thorass,
+    ANY, Common, Dethek, Espruar, Ruathlek, Thorass,
     Aarakocra, Alzhedo, Auld_Wyrmish, Beholder,
     Brownie, Bugbear, Bullywug, Centaur, Dolphin,
     Dragon_Turtle, Dryad, Dwarvish, Elvish, Elvish_Drow, Elvish_Sea, Firenewt,

@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObject.geometryObject.creature.character.stat;
+package com.project.tiaBird.gameObject.geometryObject.creature.stat;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ public class Stat {
         statsMap = new HashMap();
         StatEnum[] stats = StatEnum.values();
         for (int i = 0; i < stats.length; i++) {
-            statsMap.put(stats[i], 0);
+            statsMap.put(stats[i], 10);
         }
     }
 

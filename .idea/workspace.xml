@@ -2,19 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99d43c2c-6424-4f08-8864-0e236a1b6717" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureTypeEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfCastSpell.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/SpellTypeEnum.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/specialSkill/SpecialSkill.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureVisionType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/DancingLights.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/GhostSound.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Prestidigitation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/SpeakWithAnimals.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityDancingLights.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityGhostSound.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityPrestidigitation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilitySpeakWithAnimals.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/FrequencyTimeEnum.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbilitie/SpellLikeAbility.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureTypeEnum.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureTypeEnum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/Modification.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/Modification.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Gnome.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Gnome.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Human.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Human.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/PersonRace.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/PersonRace.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/language/LanguageEnum.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/language/LanguageEnum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Spell.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Spell.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/specialSkill/SpecialSkill.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/specialSpell/SpecialSpell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfAttackAgainst.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfAttackAgainst.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfAttackWith.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfAttackWith.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfCastSpell.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfCastSpell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfDefeceFromPerson.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfDefeceFromPerson.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfDefenceFromSpell.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfDefenceFromSpell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModificationListener.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModificationListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/stat/Stat.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/stat/Stat.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/stat/StatEnum.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/stat/StatEnum.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,13 +41,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1115">
-              <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="202">
+              <caret line="151" column="42" lean-forward="true" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
+              <folding>
+                <element signature="e#3402#3403#0" expanded="true" />
+                <element signature="e#3456#3457#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,14 +58,27 @@
       <file leaf-file-name="Creature.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="153">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/stat/Stat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,8 +86,8 @@
       <file leaf-file-name="CreatureTypeEnum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureTypeEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -64,50 +96,9 @@
       <file leaf-file-name="Gnome.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Gnome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="493">
+              <caret line="41" column="113" lean-forward="false" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="113" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpecialSpell.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/specialSpell/SpecialSpell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkillEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Modification.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/Modification.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="132" column="52" lean-forward="false" selection-start-line="132" selection-start-column="52" selection-end-line="132" selection-end-column="52" />
-              <folding>
-                <element signature="e#4352#4353#0" expanded="true" />
-                <element signature="e#4390#4391#0" expanded="true" />
-                <element signature="e#4460#4461#0" expanded="true" />
-                <element signature="e#4517#4518#0" expanded="true" />
-                <element signature="e#4590#4591#0" expanded="true" />
-                <element signature="e#4650#4651#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -117,9 +108,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -134,34 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/shield/Shield.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/movbleObject/personage/Arming.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/Equipment.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/weapon/WeaponSize.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/weapon/WeaponUsage.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/armor/Fortification.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/weapon/WeaponType.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/GeometryObject.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/movableObject/personage/Arming.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/movableObject/personage/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/Equipment.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/accessory/Accessory.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/NoneUsableEquipment.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/weapon/Weapon.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/consumables/Cosumables.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/armor/Shield.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/armor/Armor.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/accessory/Ring.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameSubject/equipment/accessory/Necklace.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameK/equipment/accessory/Necklace.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObjec/staff/equipment/accessory/Necklace.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/gameObject/equipment/accessory/Necklace.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/staff/equipment/accessory/Necklace.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/being/PersonSizeEnum.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/being/CreatureSize.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/being/Creature.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/staff/equipment/accessory/Accessory.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/staff/equipment/weapon/Weapon.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/weapon/WeaponSize.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/weapon/WeaponUsage.java" />
@@ -174,16 +137,44 @@
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Alignment.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/AbstractPersonClass.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/PersonFullClass.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Human.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/PersonRace.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/SpellTipeEnum.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfCastSpell.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Spell.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/Modification.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/specialSpell/SpecialSpell.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/stat/Stat.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureTypeEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/language/LanguageEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Human.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureVisionType.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbilitie/SpecialSpell.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbilitie/SpellLikeAbility.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/SpeakWithAnimals.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/DancingLights.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/GhostSound.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Spell.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/Prestidigitation.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/FrequencyTimeEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/SpeakWithAnimals.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/DancingLights.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/GhostSound.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Prestidigitation.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfDefenceFromSpell.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfAttackAgainst.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfAttackWith.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfDefeceFromPerson.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/GnomeDancingLights.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/GnomeGhostSound.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/GnimePrestidigitation.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/GnomeSpeakWithAnimals.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/SpellLikeAbility.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/specialSpell/SpecialSpell.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityDancingLights.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityGhostSound.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityPrestidigitation.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilitySpeakWithAnimals.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Gnome.java" />
       </list>
     </option>
@@ -212,6 +203,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -261,27 +255,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
               <item name="gameObject" type="462c0819:PsiDirectoryNode" />
-              <item name="geometryObject" type="462c0819:PsiDirectoryNode" />
-              <item name="creature" type="462c0819:PsiDirectoryNode" />
-              <item name="character" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalGameProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalGameProj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
-              <item name="gameObject" type="462c0819:PsiDirectoryNode" />
-              <item name="geometryObject" type="462c0819:PsiDirectoryNode" />
-              <item name="creature" type="462c0819:PsiDirectoryNode" />
-              <item name="character" type="462c0819:PsiDirectoryNode" />
-              <item name="skill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalGameProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalGameProj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
-              <item name="gameObject" type="462c0819:PsiDirectoryNode" />
               <item name="spell" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,15 +264,12 @@
               <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
               <item name="gameObject" type="462c0819:PsiDirectoryNode" />
               <item name="spell" type="462c0819:PsiDirectoryNode" />
-              <item name="specialSpell" type="462c0819:PsiDirectoryNode" />
+              <item name="spellLikeAbility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,18 +397,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2890511" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2788321" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -452,74 +422,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Gnome.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/GeometryObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/accessory/Accessory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfAttackAgainst.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/Modification.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureSize.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/weapon/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/trait/Trait.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/stat/StatEnum.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/Roll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/NoneUsableEquipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/armor/Shield.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/accessory/Ring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -661,26 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/SpellTypeEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/stat/Stat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -693,38 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfAttackAgainst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfAttackWith.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfCastSpell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificatinListener/ModOfDefeceFromPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/AbstractPersonClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -733,65 +592,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Spell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1115">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/Modification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
+        <state relative-caret-position="1547">
           <caret line="132" column="52" lean-forward="false" selection-start-line="132" selection-start-column="52" selection-end-line="132" selection-end-column="52" />
           <folding>
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4390#4391#0" expanded="true" />
-            <element signature="e#4460#4461#0" expanded="true" />
-            <element signature="e#4517#4518#0" expanded="true" />
-            <element signature="e#4590#4591#0" expanded="true" />
-            <element signature="e#4650#4651#0" expanded="true" />
+            <element signature="e#4333#4334#0" expanded="false" />
+            <element signature="e#4371#4372#0" expanded="false" />
+            <element signature="e#4441#4442#0" expanded="false" />
+            <element signature="e#4498#4499#0" expanded="false" />
+            <element signature="e#4571#4572#0" expanded="false" />
+            <element signature="e#4631#4632#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,22 +615,247 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/specialSpell/SpecialSpell.java">
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/language/LanguageEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureVisionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/SpeakWithAnimals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/DancingLights.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/GhostSound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Prestidigitation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModificationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfAttackAgainst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfAttackWith.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfCastSpell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfDefeceFromPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfDefenceFromSpell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/FrequencyTimeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="62" lean-forward="true" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/Spell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/stat/Stat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="151" column="42" lean-forward="true" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
+          <folding>
+            <element signature="e#3402#3403#0" expanded="true" />
+            <element signature="e#3456#3457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityGhostSound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityPrestidigitation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilitySpeakWithAnimals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/AbilityDancingLights.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/spell/spellLikeAbility/SpellLikeAbility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="82" lean-forward="false" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Gnome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="493">
+          <caret line="41" column="113" lean-forward="false" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="113" />
           <folding />
         </state>
       </provider>

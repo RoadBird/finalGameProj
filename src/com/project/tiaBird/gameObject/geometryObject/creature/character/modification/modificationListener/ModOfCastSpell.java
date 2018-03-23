@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener;
+package com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener;
 
 import com.project.tiaBird.gameObject.spell.Spell;
 

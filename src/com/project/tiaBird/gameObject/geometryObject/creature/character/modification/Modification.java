@@ -1,11 +1,11 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character.modification;
 
 import com.project.tiaBird.gameObject.GameObject;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.*;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.*;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.StatEnum;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.Stat;
+import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
+import com.project.tiaBird.gameObject.geometryObject.creature.stat.Stat;
 
 import java.util.LinkedList;
 import java.util.List;

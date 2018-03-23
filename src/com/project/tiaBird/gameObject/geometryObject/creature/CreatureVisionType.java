@@ -1,5 +1,5 @@
 package com.project.tiaBird.gameObject.geometryObject.creature;
 
-public enum CreatureTypeEnum {
-    GIANT, KOBOLD, GOBLINOID;
+public enum CreatureVisionType {
+    Normal, Low_light;
 }

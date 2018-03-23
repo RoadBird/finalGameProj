@@ -3,15 +3,16 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.personR
 import com.project.tiaBird.gameObject.geometryObject.creature.Creature;
 import com.project.tiaBird.gameObject.geometryObject.creature.CreatureSize;
 import com.project.tiaBird.gameObject.geometryObject.creature.CreatureTypeEnum;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.ModOfCastSpell;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.ModOfDefeceFromPerson;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificatinListener.ModOfDefenceFromSpell;
+import com.project.tiaBird.gameObject.geometryObject.creature.CreatureVisionType;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.ModOfCastSpell;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.ModOfDefeceFromPerson;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.ModOfDefenceFromSpell;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.stat.StatEnum;
+import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
 import com.project.tiaBird.gameObject.language.LanguageEnum;
-import com.project.tiaBird.gameObject.spell.Spell;
-import com.project.tiaBird.gameObject.spell.SpellTypeEnum;
+import com.project.tiaBird.gameObject.spell.*;
+import com.project.tiaBird.gameObject.spell.spellLikeAbility.*;
 
 public class Gnome extends PersonRace implements ModOfDefenceFromSpell, ModOfCastSpell, ModOfDefeceFromPerson{
 
@@ -23,19 +24,29 @@ public class Gnome extends PersonRace implements ModOfDefenceFromSpell, ModOfCas
         character.getMods().appendArmorClassMod(1);
         character.getMods().appendCheckAttackMod(1);
         character.setSpeed(6);
+        character.setVision(CreatureVisionType.Low_light);
         character.getMods().appendSkillMod(SkillEnum.Hide, 4);
         character.getMods().addModOfDefenceFromSpells(this);
         character.getMods().addModOfCastSpells(this);
         character.getMods().addModOfDefeceFromPersons(this);
         character.getMods().appendSkillMod(SkillEnum.Listen, 2);
+        character.getMods().appendSkillMod(SkillEnum.Craft_Alchemy, 2);
         character.addLanguages(LanguageEnum.Common);
         character.addLanguages(LanguageEnum.Gnomish);
-
-        //is not finished
+        character.addBonusLanguages(LanguageEnum.Dwarvish);
+        character.addBonusLanguages(LanguageEnum.Dragon_Turtle);
+        character.addBonusLanguages(LanguageEnum.Elvish);
+        character.addBonusLanguages(LanguageEnum.Giant);
+        character.addBonusLanguages(LanguageEnum.Goblin);
+        character.addBonusLanguages(LanguageEnum.Orc);
+        character.addSpellLikeAbilities(new AbilitySpeakWithAnimals(character, 1, FrequencyTimeEnum.Once_a_day));
+        character.addSpellLikeAbilities(new AbilityDancingLights(character, 1, FrequencyTimeEnum.Once_a_day));
+        character.addSpellLikeAbilities(new AbilityDancingLights(character, 1, FrequencyTimeEnum.Once_a_day));
+        character.addSpellLikeAbilities(new AbilityPrestidigitation(character, 1, FrequencyTimeEnum.Once_a_day));
     }
 
     @Override
-    public int getDefenceModificatin(Spell spell) {
+    public int getDefenceModification(Spell spell) {
         if(spell.getType() == SpellTypeEnum.ILLUSION){
             return 2;
         }
@@ -50,10 +61,15 @@ public class Gnome extends PersonRace implements ModOfDefenceFromSpell, ModOfCas
     }
 
     @Override
-    public int getDefenceModificatin(Creature target) {
+    public int getDefenceModification(Creature target) {
+        int toReturn = 0;
         if (target.getCreatureType() == CreatureTypeEnum.GIANT){
-            return 4;
+            toReturn += 4;
         }
-        return 0;
+        if (target.getCreatureType() == CreatureTypeEnum.KOBOLD
+                || target.getCreatureType() == CreatureTypeEnum.GOBLINOID){
+            toReturn += 1;
+        }
+        return toReturn;
     }
 }

@@ -5,12 +5,12 @@ import com.project.tiaBird.gameObject.GameObject;
 public class Spell extends GameObject {
     private int level;
     private SpellTypeEnum spellType;
-    private int complexityClass;
+    private int difficultyClass;
 
-    protected Spell(int level, int complexityClass, SpellTypeEnum type){
+    protected Spell(int level, int difficultyClass, SpellTypeEnum type){
         this.level = level;
         spellType = type;
-        this.complexityClass = complexityClass;
+        this.difficultyClass = difficultyClass;
     }
 
     public int getLevel() {
@@ -22,6 +22,6 @@ public class Spell extends GameObject {
     }
 
     public void appendComplexityClass(int count){
-        complexityClass += count;
+        difficultyClass += count;
     }
 }
