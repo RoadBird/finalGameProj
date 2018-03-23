@@ -3,6 +3,7 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.skill;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
 
 public enum SkillEnum {
+    Feeling_of_stone, //Только для Дварфов
     Appraise, Balance, Bluff, Climb, Concentration, Craft_Alchemy, Craft_Armorsmithing,
     Craft_Bowmaking, Craft_Weaponsmithing, Craft_Trapmaking, Craft_Varies, Decipher_Script,
     Diplomacy, Disable_Device, Disguise, Escape_Artist, Forgery, Gather_Information,

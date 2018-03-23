@@ -13,6 +13,7 @@ import com.project.tiaBird.gameObject.geometryObject.item.Money;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.PersonFullClass;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.PersonRace;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.Stat;
+import com.project.tiaBird.gameObject.geometryObject.item.SpellBook;
 import com.project.tiaBird.gameObject.god.God;
 import com.project.tiaBird.gameObject.language.LanguageEnum;
 import com.project.tiaBird.gameObject.spell.spellLikeAbility.SpellLikeAbility;
@@ -35,7 +36,7 @@ public class Character extends Creature {
 
     private PersonRace personRace;
     private PersonFullClass personFullClass = new PersonFullClass(this);
-    private Skill skill;
+    private Skill skill = new Skill();
     private Set<Trait> traits = new HashSet<>();
     private Set<LanguageEnum> languages = new HashSet<>();
     private Set<LanguageEnum> bonusLanguages = new HashSet<>();
@@ -44,11 +45,10 @@ public class Character extends Creature {
     private Set<SpellLikeAbility> spellLikeAbilities = new HashSet<>();
 
     private Creature target; //нацеленность персонажа на...
-    private int countOfSpellPerDay = 0;
-    private int countOfUsedSpellInThisDey = 0;
+
     private StatEnum mainStatToMAXSpellCount = null;
-    private int[] countOfMaxKnowbleSpells = new int[10];
-    private Map<Integer, Set<Spell>> spellBook = new HashMap<>();
+    private int[] countOfMaxKnowbleSpells = new int[11];
+    private SpellBook spellBook;
 
     private God god;
     private Alignment alignment;
@@ -85,10 +85,19 @@ public class Character extends Creature {
         this.bonusLanguages.add(bonusLanguage);
     }
 
+    public Skill getSkill(){
+        return skill;
+    }
+
     public void addSpell(Spell spell) {
-        if (countOfMaxKnowbleSpells[spell.getLevel()] < spellBook.get(spell.getLevel()).size()) {
-            spellBook.get(spell.getLevel()).add(spell);
-        } else System.out.println("Max limit of knowledge spell");
+        if (spellBook != null && spell.getLevel() < 11) {
+            if (countOfMaxKnowbleSpells[spell.getLevel()] < spellBook.getSpellSet(spell.getLevel()).size()) {
+                spellBook.putSpell(spell);
+            }
+        }
+    }
+    public SpellBook getSpellBook(){
+        return spellBook;
     }
 
     public void addSpellLikeAbilities(SpellLikeAbility spellLikeAbility) {
@@ -98,15 +107,9 @@ public class Character extends Creature {
     public Modification getMods() {
         return mods;
     }
-    public void setMods(Modification mods) {
-        this.mods = mods;
-    }
 
     public PersonRace getPersonRace() {
         return personRace;
-    }
-    public void setPersonRace(PersonRace personRace) {
-        this.personRace = personRace;
     }
 
     @Override
@@ -153,9 +156,6 @@ public class Character extends Creature {
             character.mods = new Modification();
             character.personFullClass = new PersonFullClass(character);
             character.personRace = new Human(character);
-            for (int i = 0; i < 10; i++) {
-                character.spellBook.put(i, new HashSet<>());
-            }
         }
         public Builder setStats(Stat stat){
             character.appendStat(StatEnum.CHAR, stat.getStat(StatEnum.CHAR) - 10);
