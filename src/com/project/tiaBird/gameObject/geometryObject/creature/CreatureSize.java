@@ -1,5 +1,5 @@
 package com.project.tiaBird.gameObject.geometryObject.creature;
 
 public enum CreatureSize {
-    TINY, SMALL, MEDIUM, LARGE, HUGE, GARGANTUAN;
+    FINE, DIMINUTIVE, TINY, SMALL, MEDIUM, LARGE, HUGE, GARGANTUAN, COLOSSAL;
 }

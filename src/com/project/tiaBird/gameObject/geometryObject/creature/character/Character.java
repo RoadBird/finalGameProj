@@ -7,6 +7,7 @@ import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.
 import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.Modification;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.Human;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.trait.Trait;
 import com.project.tiaBird.gameObject.geometryObject.item.Money;
@@ -30,7 +31,7 @@ public class Character extends Creature {
     private int armorClass = 0;
     private int radiusOfSee = 0;
     private CreatureVisionType vision = CreatureVisionType.Normal;
-    private CreatureSize size;
+    private CreatureSize size = CreatureSize.MEDIUM;
 
     private PersonRace personRace;
     private PersonFullClass personFullClass = new PersonFullClass(this);
@@ -122,7 +123,65 @@ public class Character extends Creature {
         return size;
     }
     public void setSize(CreatureSize size) {
+        switch (this.size){
+            case FINE:
+                changeModsWithSize(-8);
+                break;
+            case DIMINUTIVE:
+                changeModsWithSize(-4);
+                break;
+            case TINY:
+                changeModsWithSize(-2);
+                break;
+            case SMALL:
+                changeModsWithSize(-1);
+                break;
+            case LARGE:
+                changeModsWithSize(1);
+                break;
+            case HUGE:
+                changeModsWithSize(2);
+                break;
+            case GARGANTUAN:
+                changeModsWithSize(4);
+                break;
+            case COLOSSAL:
+                changeModsWithSize(8);
+                break;
+        }
+        switch (size){
+            case FINE:
+                changeModsWithSize(8);
+                break;
+            case DIMINUTIVE:
+                changeModsWithSize(4);
+                break;
+            case TINY:
+                changeModsWithSize(2);
+                break;
+            case SMALL:
+                changeModsWithSize(1);
+                break;
+            case LARGE:
+                changeModsWithSize(-1);
+                break;
+            case HUGE:
+                changeModsWithSize(-2);
+                break;
+            case GARGANTUAN:
+                changeModsWithSize(-4);
+                break;
+            case COLOSSAL:
+                changeModsWithSize(-8);
+                break;
+        }
+
         this.size = size;
+    }
+    private void changeModsWithSize(int count){
+        getMods().appendArmorClassMod(count);
+        getMods().appendCheckAttackMod(count);
+        getMods().appendSkillMod(SkillEnum.Hide, count*4);
     }
 
     public CreatureVisionType getVision() {
