@@ -45,8 +45,8 @@ public class Character extends Creature {
 
     private Creature target; //нацеленность персонажа на...
 
-    private StatEnum mainStatToMAXSpellCount = null;
-    private int[] countOfMaxKnowbleSpells = new int[11];
+//    private StatEnum mainStatToMAXSpellCount = null;
+//    private int[] countOfMaxKnowbleSpells = new int[11];
     private SpellBook spellBook;
 
     private God god;
@@ -59,10 +59,7 @@ public class Character extends Creature {
 
     private Character() {}
 
-//    public abstract int getCheckSkill();
-//
-//    public abstract int getPointAttack();
-//
+
 //    public abstract int getSavingThrowFortitude();
 //
 //    public abstract int getSavingThrowReflex();
@@ -70,6 +67,16 @@ public class Character extends Creature {
 //    public abstract int getSavingThrowWill();
 //
 //    public abstract int getSpellsPerDay();
+
+    //    public abstract void levelUP();
+
+    //    public abstract void addExperiencePoints(int count);
+
+    // public abstract void newTrait();
+
+    // public abstract void appendStat();
+
+    // public abstract void appendSkills();
 
     public Set<LanguageEnum> getLanguages() {
         return languages;
@@ -88,13 +95,8 @@ public class Character extends Creature {
         return skill;
     }
 
-    public void addSpell(Spell spell) {
-        if (spellBook != null && spell.getLevel() < 11) {
-            if (countOfMaxKnowbleSpells[spell.getLevel()] < spellBook.getSpellSet(spell.getLevel()).size()) {
-                spellBook.putSpell(spell);
-            }
-        }
-    }
+    //public abstract void addSpell(Spell spell);
+
     public SpellBook getSpellBook(){
         return spellBook;
     }
@@ -109,14 +111,6 @@ public class Character extends Creature {
 
     public PersonRace getPersonRace() {
         return personRace;
-    }
-
-    @Override
-    public void appendStat(StatEnum stat, int count) {
-        appendStat(stat, count);
-        if(mainStatToMAXSpellCount != null && stat.equals(mainStatToMAXSpellCount)) {
-            toCountMaxKnowbleSpell(mainStatToMAXSpellCount);
-        }
     }
 
     public CreatureSize getSize() {
@@ -199,13 +193,6 @@ public class Character extends Creature {
         this.alignment = alignment;
     }
 
-    private void toCountMaxKnowbleSpell(StatEnum stat) {
-        if (stat != null) {
-            for (int i = 0; i < countOfMaxKnowbleSpells.length; i++) {
-                countOfMaxKnowbleSpells[i] = getStat().getCountOfSpellModifier(stat, i);
-            }
-        }
-    }
     public static class Builder{
         private Character character = new Character();
         public Builder(){
