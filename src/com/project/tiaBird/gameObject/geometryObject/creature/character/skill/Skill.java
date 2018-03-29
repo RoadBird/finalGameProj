@@ -4,20 +4,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Skill {
-    private Map<SkillEnum, Integer> skillsMap = new HashMap();
+    private Map<SkillEnum, Double> skillsMap = new HashMap();
 
     public Skill() {
         SkillEnum[] skills = SkillEnum.values();
         for (int i = 0; i < skills.length; i++) {
-            skillsMap.put(skills[i], 0);
+            skillsMap.put(skills[i], 0.0);
         }
     }
 
-    public void appendSkill(SkillEnum skill, int count){
+    public void appendSkill(SkillEnum skill, double count){
         skillsMap.put(skill, skillsMap.get(skill) + count);
     }
 
-    public int getSkill(SkillEnum skill){
+    public double getSkill(SkillEnum skill){
         return skillsMap.get(skill);
     }
 }

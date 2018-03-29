@@ -40,4 +40,11 @@ public class Money extends GeometryObject {
     public void setPlatinum(int platinum) {
         this.platinum = platinum;
     }
+
+    public void appendMoney(Money money){
+        setBronze(money.getBronze() + getBronze());
+        setSilver(money.getSilver() + getSilver());
+        setGold(money.getGold() + getGold());
+        setPlatinum(money.getPlatinum() + getPlatinum());
+    }
 }

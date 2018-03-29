@@ -28,10 +28,10 @@ public class Character extends Creature {
     private String name;
     private int experiencePoints = 0;
     private int health = 0;
+    private int maxHealth = 0;
     private int armorClass = 0;
     private int radiusOfSee = 0;
-    private CreatureVisionType vision = CreatureVisionType.Normal;
-    private CreatureSize size = CreatureSize.MEDIUM;
+
 
     private PersonRace personRace;
     private PersonFullClass personFullClass = new PersonFullClass(this);
@@ -39,7 +39,6 @@ public class Character extends Creature {
     private Set<Trait> traits = new HashSet<>();
     private Set<LanguageEnum> languages = new HashSet<>();
     private Set<LanguageEnum> bonusLanguages = new HashSet<>();
-    private Modification mods;
 
     private Set<SpellLikeAbility> spellLikeAbilities = new HashSet<>();
 
@@ -59,7 +58,6 @@ public class Character extends Creature {
 
     private Character() {}
 
-
 //    public abstract int getSavingThrowFortitude();
 //
 //    public abstract int getSavingThrowReflex();
@@ -78,6 +76,14 @@ public class Character extends Creature {
 
     // public abstract void appendSkills();
 
+    public void appendMaxHealf(int count){
+        maxHealth += count;
+    }
+
+    public void appendMoney(Money money){
+        this.money.appendMoney(money);
+    }
+
     public Set<LanguageEnum> getLanguages() {
         return languages;
     }
@@ -89,6 +95,22 @@ public class Character extends Creature {
     }
     public void addBonusLanguages(LanguageEnum bonusLanguage) {
         this.bonusLanguages.add(bonusLanguage);
+    }
+
+    public Arming getArming() {
+        return arming;
+    }
+
+    public void setArming(Arming arming) {
+        this.arming = arming;
+    }
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
     }
 
     public Skill getSkill(){
@@ -105,84 +127,8 @@ public class Character extends Creature {
         this.spellLikeAbilities.add(spellLikeAbility);
     }
 
-    public Modification getMods() {
-        return mods;
-    }
-
     public PersonRace getPersonRace() {
         return personRace;
-    }
-
-    public CreatureSize getSize() {
-        return size;
-    }
-    public void setSize(CreatureSize size) {
-        switch (this.size){
-            case FINE:
-                changeModsWithSize(-8);
-                break;
-            case DIMINUTIVE:
-                changeModsWithSize(-4);
-                break;
-            case TINY:
-                changeModsWithSize(-2);
-                break;
-            case SMALL:
-                changeModsWithSize(-1);
-                break;
-            case LARGE:
-                changeModsWithSize(1);
-                break;
-            case HUGE:
-                changeModsWithSize(2);
-                break;
-            case GARGANTUAN:
-                changeModsWithSize(4);
-                break;
-            case COLOSSAL:
-                changeModsWithSize(8);
-                break;
-        }
-        switch (size){
-            case FINE:
-                changeModsWithSize(8);
-                break;
-            case DIMINUTIVE:
-                changeModsWithSize(4);
-                break;
-            case TINY:
-                changeModsWithSize(2);
-                break;
-            case SMALL:
-                changeModsWithSize(1);
-                break;
-            case LARGE:
-                changeModsWithSize(-1);
-                break;
-            case HUGE:
-                changeModsWithSize(-2);
-                break;
-            case GARGANTUAN:
-                changeModsWithSize(-4);
-                break;
-            case COLOSSAL:
-                changeModsWithSize(-8);
-                break;
-        }
-
-        this.size = size;
-    }
-    private void changeModsWithSize(int count){
-        getMods().appendArmorClassMod(count);
-        getMods().appendCheckAttackMod(count);
-        getMods().appendSkillMod(SkillEnum.Hide, count*4);
-    }
-
-    public CreatureVisionType getVision() {
-        return vision;
-    }
-    public void setVision(CreatureVisionType vision) {
-        this.vision = vision;
     }
 
     public Alignment getAlignment() {
@@ -197,7 +143,7 @@ public class Character extends Creature {
         private Character character = new Character();
         public Builder(){
             character.skill = new Skill();
-            character.mods = new Modification();
+            character.setMods(new Modification());
             character.personFullClass = new PersonFullClass(character);
             character.personRace = new Human(character);
         }
@@ -219,7 +165,7 @@ public class Character extends Creature {
             return this;
         }
         public Builder setMods(Modification mods){
-            character.mods = mods;
+            character.setMods(mods);
             return this;
         }
         public Builder addNewPersonClass(AbstractPersonClass personClass){

@@ -131,14 +131,14 @@ public class Modification extends GameObject {
     public int getStatsMod(StatEnum stat) {
         return statMod.getStat(stat);
     }
-    public void appendStatsMod(StatEnum stat, int cout) {
-        statMod.appendStat(stat, cout);
+    public void appendStatsMod(StatEnum stat, int count) {
+        statMod.appendStat(stat, count);
     }
 
-    public int getSkillsMod(SkillEnum skill) {
+    public double getSkillsMod(SkillEnum skill) {
         return skillMod.getSkill(skill);
     }
-    public void appendSkillMod(SkillEnum skill, int count) {
+    public void appendSkillMod(SkillEnum skill, double count) {
         skillMod.appendSkill(skill, count);
     }
 
