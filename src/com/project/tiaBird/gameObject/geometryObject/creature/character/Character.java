@@ -26,7 +26,8 @@ import java.util.Set;
 public class Character extends Creature {
 
     private String name;
-    private int experiencePoints = 0;
+    private int freePointsOfTraits = 0;
+    private int freePointsOfStats = 0;
     private int health = 0;
     private int maxHealth = 0;
     private int armorClass = 0;

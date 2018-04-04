@@ -16,6 +16,7 @@ import java.util.Set;
 public class PersonFullClass extends GameObject {
 
     private Character character;
+    private int experiencePoints = 0;
     private Set<Weapon> weaponQualification = new HashSet<>();
     private Set<Armor> armorQualification = new HashSet<>();
     private Set<Shield> shieldQualification = new HashSet<>();
@@ -29,14 +30,17 @@ public class PersonFullClass extends GameObject {
         skills = character.getSkill();
     }
 
-
+    //TODO продвижение только на один уровень иначе на 2, но -1 очко опыта
+    //TODO передача управления  игроку для выбора класса
+    //TODO добавлять свободные очки черт и навыков
+    //public void appendExperiencePoints(int points);
 
     public void levelApp(AbstractPersonClass personClass){
         personClass.levelUp();
         level++;
         if(level == 1) {
+            freePointOfSkill += (personClass.getPointOfSkillPerLevel() + character.getStatModifier(StatEnum.INT)) * 4;
             int hp = personClass.getMaxHP() + character.getStatModifier(StatEnum.CON);
-            freePointOfSkill += personClass.getPointOfSkillPerLevel() * 4;
             if(hp <=0) {
                 hp = 1;
             }
@@ -45,7 +49,7 @@ public class PersonFullClass extends GameObject {
             character.setInventory(personClass.getStartInventory());
             character.setArming(personClass.getStartArming());
         } else {
-            freePointOfSkill += personClass.getPointOfSkillPerLevel();
+            freePointOfSkill += personClass.getPointOfSkillPerLevel() + character.getStatModifier(StatEnum.INT);
             int hp = personClass.getNewHP() + character.getStatModifier(StatEnum.CON);
             if(hp <=0) {
                 hp = 1;
@@ -112,9 +116,9 @@ public class PersonFullClass extends GameObject {
     }
 
 
-    //Что делать, если до максимума не хватает 0.5, а повышается на 1 ???
+    //TODO Что делать, если до максимума не хватает 0.5, а повышается на 1 ???
     public void appendSkill(SkillEnum skill) throws AppendException {
-        if(maxSkillRang(skill) > skills.getSkill(skill)){
+        if(getMaxSkillRang(skill) > skills.getSkill(skill)){
             if(isClassSkill(skill)) {
                 skills.appendSkill(skill, 1);
             } else {
@@ -134,7 +138,7 @@ public class PersonFullClass extends GameObject {
         return false;
     }
 
-    private double maxSkillRang(SkillEnum skill){
+    private double getMaxSkillRang(SkillEnum skill){
         if(isClassSkill(skill)){
             return level + 3;
         } else {
