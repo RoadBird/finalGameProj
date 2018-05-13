@@ -7,6 +7,11 @@ import com.project.tiaBird.gameObject.geometryObject.creature.stat.Stat;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
 
 public class Creature extends GeometryObject {
+    protected String name;
+    protected int health = 0;
+    protected int maxHealth = 0;
+    protected int armorClass = 0;
+
     private int speed;
     private int level;
     private Stat stat = new Stat();

@@ -1,44 +1,35 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character;
 
+import com.project.tiaBird.gameObject.effect.spell.spellLikeAbility.SpellLikeAbility;
 import com.project.tiaBird.gameObject.geometryObject.creature.Creature;
-import com.project.tiaBird.gameObject.geometryObject.creature.CreatureSize;
-import com.project.tiaBird.gameObject.geometryObject.creature.CreatureVisionType;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.AbstractPersonClass;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.PersonFullClass;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.Modification;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.Human;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
-import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.trait.Trait;
-import com.project.tiaBird.gameObject.geometryObject.item.Money;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.PersonFullClass;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.PersonRace;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.trait.Trait;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.Stat;
+import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
+import com.project.tiaBird.gameObject.geometryObject.item.Money;
 import com.project.tiaBird.gameObject.geometryObject.item.SpellBook;
 import com.project.tiaBird.gameObject.god.God;
 import com.project.tiaBird.gameObject.language.LanguageEnum;
-import com.project.tiaBird.gameObject.effect.spell.spellLikeAbility.SpellLikeAbility;
-import com.project.tiaBird.gameObject.effect.spell.Spell;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class Character extends Creature {
 
-    private String name;
     private int experiencePoints = 0;
     private int freePointsOfTraits = 0;
     private int freePointsOfStats = 0;
-    private int health = 0;
-    private int maxHealth = 0;
-    private int armorClass = 0;
-    private int radiusOfSee = 0;
-
 
     private PersonRace personRace;
     private PersonFullClass personFullClass = new PersonFullClass(this);
     private Skill skill = new Skill();
     private Set<Trait> traits = new HashSet<>();
+    private ArmamentQualification qualification = new ArmamentQualification();
     private Set<LanguageEnum> languages = new HashSet<>();
     private Set<LanguageEnum> bonusLanguages = new HashSet<>();
 
@@ -112,6 +103,10 @@ public class Character extends Creature {
         this.arming = arming;
     }
 
+    public ArmamentQualification getQualification() {
+        return qualification;
+    }
+
     public Inventory getInventory() {
         return inventory;
     }
@@ -149,9 +144,7 @@ public class Character extends Creature {
     public static class Builder{
         private Character character = new Character();
         public Builder(){
-            character.skill = new Skill();
             character.setMods(new Modification());
-            character.personFullClass = new PersonFullClass(character);
             character.personRace = new Human(character);
         }
         public Builder setStats(Stat stat){

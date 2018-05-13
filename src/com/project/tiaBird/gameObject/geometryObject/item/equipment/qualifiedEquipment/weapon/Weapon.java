@@ -1,9 +1,9 @@
-package com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon;
+package com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon;
 
 import com.project.tiaBird.gameObject.Roll;
 import com.project.tiaBird.gameObject.geometryObject.item.Money;
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.Equipment;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.weaponParameters.WeaponSize;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters.WeaponSize;
 
 public class Weapon extends Equipment {
     private WeaponCharacteristics weaponCharacteristics = new WeaponCharacteristics();

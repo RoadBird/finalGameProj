@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.weaponParameters;
+package com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters;
 
 public enum DamageParameter {
     IMPACT, PIERCE, SLASH,

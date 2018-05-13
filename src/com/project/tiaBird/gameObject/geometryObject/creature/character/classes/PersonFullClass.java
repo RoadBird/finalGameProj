@@ -6,9 +6,9 @@ import com.project.tiaBird.gameObject.geometryObject.creature.character.Characte
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.armor.Armor;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.armor.Shield;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.Weapon;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.armor.Armor;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.shield.Shield;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.Weapon;
 
 import java.util.HashSet;
 import java.util.Set;
