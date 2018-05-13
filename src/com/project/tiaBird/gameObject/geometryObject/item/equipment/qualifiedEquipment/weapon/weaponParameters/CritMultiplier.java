@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.weaponParameters;
+package com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters;
 
 public enum CritMultiplier {
     DOUBLE(2), TRIPLE(3), QUADROPLE(4), DUAL_ENDED(3, 4), LITE_DOUBLE(2), EXTRA_LITE_DOUBLE(2);

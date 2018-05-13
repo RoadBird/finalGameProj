@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObject.geometryObject.creature.character;
+package com.project.tiaBird.gameObject.geometryObject.creature;
 
 import com.project.tiaBird.gameObject.GameObject;
 

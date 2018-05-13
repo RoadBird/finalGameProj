@@ -1,4 +1,4 @@
-package com.project.tiaBird.gameObject.geometryObject.item.equipment.armor;
+package com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment;
 
 public enum Fortification {
     LIGHT(25), MEDIUM(75), HEAVY(100);

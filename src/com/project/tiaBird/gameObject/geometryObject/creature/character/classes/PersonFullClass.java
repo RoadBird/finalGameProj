@@ -3,12 +3,10 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.classes
 import com.project.tiaBird.exception.AppendException;
 import com.project.tiaBird.gameObject.GameObject;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.Human;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.armor.Armor;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.armor.Shield;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.Weapon;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -16,9 +14,6 @@ import java.util.Set;
 public class PersonFullClass extends GameObject {
 
     private Character character;
-    private Set<Weapon> weaponQualification = new HashSet<>();
-    private Set<Armor> armorQualification = new HashSet<>();
-    private Set<Shield> shieldQualification = new HashSet<>();
     private Skill skills;
     private int freePointOfSkill = 0;
     private int level = 0;
@@ -29,21 +24,39 @@ public class PersonFullClass extends GameObject {
         skills = character.getSkill();
     }
 
+    public Skill getSkills() {
+        return skills;
+    }
+
+    public int getFreePointOfSkill() {
+        return freePointOfSkill;
+    }
+
+    public Set<AbstractPersonClass> getPersonFullClasses() {
+        return personFullClasses;
+    }
+
     public void levelApp(AbstractPersonClass personClass){
         personClass.levelUp();
         level++;
         if(level == 1) {
             freePointOfSkill += (personClass.getPointOfSkillPerLevel() + character.getStatModifier(StatEnum.INT)) * 4;
+            if(character.getPersonRace() instanceof Human){
+                freePointOfSkill += 4;
+            }
             int hp = personClass.getMaxHP() + character.getStatModifier(StatEnum.CON);
             if(hp <=0) {
                 hp = 1;
             }
             character.appendMaxHealf(hp);
-            character.appendMoney(personClass.getMoney());
+            character.appendMoney(personClass.getStartMoney());
             character.setInventory(personClass.getStartInventory());
             character.setArming(personClass.getStartArming());
         } else {
             freePointOfSkill += personClass.getPointOfSkillPerLevel() + character.getStatModifier(StatEnum.INT);
+            if(character.getPersonRace() instanceof Human){
+                freePointOfSkill++;
+            }
             int hp = personClass.getNewHP() + character.getStatModifier(StatEnum.CON);
             if(hp <=0) {
                 hp = 1;
@@ -63,18 +76,6 @@ public class PersonFullClass extends GameObject {
 
     public int getLevel(){
         return level;
-    }
-
-    public Set<Weapon> getWeaponQualification() {
-        return weaponQualification;
-    }
-
-    public Set<Armor> getArmorQualification() {
-        return armorQualification;
-    }
-
-    public Set<Shield> getShieldQualification() {
-        return shieldQualification;
     }
 
     public int[] getAttackThrow(){
@@ -109,15 +110,16 @@ public class PersonFullClass extends GameObject {
         return toReturn;
     }
 
-
-    //TODO Что делать, если до максимума не хватает 0.5, а повышается на 1 ???
     public void appendSkill(SkillEnum skill) throws AppendException {
-        if(getMaxSkillRang(skill) > skills.getSkill(skill)){
-            if(isClassSkill(skill)) {
+        if(getMaxSkillRang(skill) > skills.getSkill(skill) + 0.5) {
+            if (isClassSkill(skill)) {
                 skills.appendSkill(skill, 1);
             } else {
                 skills.appendSkill(skill, 0.5);
             }
+        } else if (getMaxSkillRang(skill) == skills.getSkill(skill) + 0.5 &&
+                !isClassSkill(skill)){
+            skills.appendSkill(skill, 0.5);
         } else {
             throw new AppendException("Cannot append skill. Max limited");
         }

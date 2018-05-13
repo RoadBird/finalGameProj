@@ -1,6 +1,7 @@
-package com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon;
+package com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon;
 
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.weaponParameters.*;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.Qualifier;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters.*;
 
 public class WeaponCharacteristics {
     private DamageParameter damageParameter;
@@ -10,8 +11,9 @@ public class WeaponCharacteristics {
     private CritMultiplier critMultiplier;
     private DamageApplication damageApplication;
     private WeaponEquivalent weaponEquivalent;
-    private WeaponQualifier weaponQualifier;
+    private Qualifier qualifier;
     private DamageType damageType;
+    //TODO Сделай сеттер, Мудила!!!
 
     public WeaponSize getWeaponSize() {
         return weaponSize;
@@ -53,8 +55,8 @@ public class WeaponCharacteristics {
         return damageApplication;
     }
 
-    public WeaponQualifier getWeaponQualifier() {
-        return weaponQualifier;
+    public Qualifier getQualifier() {
+        return qualifier;
     }
 
     public DamageType getDamageType() {

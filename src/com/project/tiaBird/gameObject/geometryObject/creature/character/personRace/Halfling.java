@@ -7,8 +7,8 @@ import com.project.tiaBird.gameObject.geometryObject.creature.character.modifica
 import com.project.tiaBird.gameObject.geometryObject.creature.character.modification.modificationListener.ModOfDefenceFromEffect;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.Weapon;
-import com.project.tiaBird.gameObject.geometryObject.item.equipment.weapon.weaponParameters.WeaponType;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.Weapon;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters.WeaponType;
 import com.project.tiaBird.gameObject.language.LanguageEnum;
 
 public class Halfling extends PersonRace implements ModOfDefenceFromEffect, ModOfAttackWith{

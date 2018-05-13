@@ -38,10 +38,11 @@ public abstract class AbstractPersonClass extends GameObject{
     public abstract int getMaxHP();
     public abstract Arming getStartArming();
     public abstract Inventory getStartInventory();
+    public abstract Money getStartMoney();
     public abstract int[] getSpellPerDay();
     public abstract int getPointOfSkillPerLevel();
-    public abstract StatEnum getMainStat();
 
+    public abstract StatEnum getMainStat();
     public void levelUp(){
         switch (level){
             case 0: levelUp1(); level++; break;
@@ -88,5 +89,4 @@ public abstract class AbstractPersonClass extends GameObject{
     protected abstract void levelUp19();
     protected abstract void levelUp20();
     public abstract void leaveTheClass();
-    public abstract Money getMoney();
 }
