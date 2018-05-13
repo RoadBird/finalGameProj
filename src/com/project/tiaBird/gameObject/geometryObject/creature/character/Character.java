@@ -26,6 +26,7 @@ import java.util.Set;
 public class Character extends Creature {
 
     private String name;
+    private int experiencePoints = 0;
     private int freePointsOfTraits = 0;
     private int freePointsOfStats = 0;
     private int health = 0;
@@ -84,6 +85,11 @@ public class Character extends Creature {
     public void appendMoney(Money money){
         this.money.appendMoney(money);
     }
+
+    //TODO продвижение только на один уровень иначе на 2, но -1 очко опыта
+    //TODO передача управления  игроку для выбора класса
+    //TODO добавлять свободные очки черт и навыков
+    //public void appendExperiencePoints(int points);
 
     public Set<LanguageEnum> getLanguages() {
         return languages;

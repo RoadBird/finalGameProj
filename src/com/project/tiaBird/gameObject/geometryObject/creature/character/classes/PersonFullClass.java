@@ -16,7 +16,6 @@ import java.util.Set;
 public class PersonFullClass extends GameObject {
 
     private Character character;
-    private int experiencePoints = 0;
     private Set<Weapon> weaponQualification = new HashSet<>();
     private Set<Armor> armorQualification = new HashSet<>();
     private Set<Shield> shieldQualification = new HashSet<>();
@@ -29,11 +28,6 @@ public class PersonFullClass extends GameObject {
         this.character = character;
         skills = character.getSkill();
     }
-
-    //TODO продвижение только на один уровень иначе на 2, но -1 очко опыта
-    //TODO передача управления  игроку для выбора класса
-    //TODO добавлять свободные очки черт и навыков
-    //public void appendExperiencePoints(int points);
 
     public void levelApp(AbstractPersonClass personClass){
         personClass.levelUp();
