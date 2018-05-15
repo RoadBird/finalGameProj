@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99d43c2c-6424-4f08-8864-0e236a1b6717" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/PersonFullClass.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/PersonFullClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/EffectsEnum.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/EffectsEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Dwarf.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Dwarf.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/HalfElf.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/HalfElf.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Halfling.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Halfling.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/Skill.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/Skill.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java" afterPath="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,50 +24,43 @@
       <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonFullClass.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/PersonFullClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="356">
+              <caret line="99" column="19" lean-forward="false" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
               <folding>
-                <element signature="e#1071#1072#0" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
-                <element signature="e#1140#1141#0" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#2685#2686#0" expanded="true" />
-                <element signature="e#2728#2729#0" expanded="true" />
-                <element signature="e#2756#2757#0" expanded="true" />
-                <element signature="e#2784#2785#0" expanded="true" />
+                <element signature="e#4475#4476#0" expanded="true" />
+                <element signature="e#4535#4536#0" expanded="true" />
+                <element signature="class#Builder#0;class#Character#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractPersonClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/AbstractPersonClass.java">
+      <file leaf-file-name="Skill.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/Skill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Creature.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java">
+      <file leaf-file-name="SkillEnum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+              <folding>
+                <element signature="e#2307#2308#0" expanded="true" />
+                <element signature="e#2345#2346#0" expanded="true" />
+                <element signature="e#2385#2386#0" expanded="true" />
+                <element signature="e#2419#2420#0" expanded="true" />
+                <element signature="e#2458#2459#0" expanded="true" />
+                <element signature="e#2496#2497#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,19 +92,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/spell/Spell.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/Effect.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/modificationListener/ModOfDefenceFromEffect.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Dwarf.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/HalfElf.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/EffectsEnum.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/HighElf.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Halfling.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Gnome.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/CreatureSize.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/specialAbility/SpecialAbilities.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/modification/Modification.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/Skill.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/exception/GameException.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/exception/AppendException.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/Money.java" />
@@ -141,12 +136,17 @@
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/qualifiedEquipment/armor/Armor.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/ArmamentQualification.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/Creature.java" />
-        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java" />
         <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/PersonFullClass.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/Skill.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Dwarf.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Halfling.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/EffectsEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="775" />
@@ -169,10 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,6 +193,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
               <item name="gameObject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalGameProj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalGameProj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
+              <item name="gameObject" type="462c0819:PsiDirectoryNode" />
+              <item name="effect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finalGameProj" type="b2602c69:ProjectViewProjectNode" />
@@ -243,7 +247,20 @@
               <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
               <item name="gameObject" type="462c0819:PsiDirectoryNode" />
               <item name="geometryObject" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
+              <item name="creature" type="462c0819:PsiDirectoryNode" />
+              <item name="character" type="462c0819:PsiDirectoryNode" />
+              <item name="personRace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalGameProj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalGameProj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
+              <item name="gameObject" type="462c0819:PsiDirectoryNode" />
+              <item name="geometryObject" type="462c0819:PsiDirectoryNode" />
+              <item name="creature" type="462c0819:PsiDirectoryNode" />
+              <item name="character" type="462c0819:PsiDirectoryNode" />
+              <item name="skill" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finalGameProj" type="b2602c69:ProjectViewProjectNode" />
@@ -253,35 +270,15 @@
               <item name="gameObject" type="462c0819:PsiDirectoryNode" />
               <item name="geometryObject" type="462c0819:PsiDirectoryNode" />
               <item name="item" type="462c0819:PsiDirectoryNode" />
-              <item name="equipment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalGameProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalGameProj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
-              <item name="gameObject" type="462c0819:PsiDirectoryNode" />
-              <item name="geometryObject" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
-              <item name="equipment" type="462c0819:PsiDirectoryNode" />
-              <item name="qualifiedEquipment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalGameProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalGameProj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tiaBird" type="462c0819:PsiDirectoryNode" />
-              <item name="gameObject" type="462c0819:PsiDirectoryNode" />
-              <item name="geometryObject" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
-              <item name="equipment" type="462c0819:PsiDirectoryNode" />
-              <item name="qualifiedEquipment" type="462c0819:PsiDirectoryNode" />
-              <item name="armor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -404,7 +401,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -427,30 +424,11 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2635432" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -498,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="74" lean-forward="false" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/Effect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -533,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/EffectsEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/spell/SpellTypeEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -561,24 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/Skill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#518#519#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Dwarf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Gnome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -590,13 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="140" column="16" lean-forward="false" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/HalfElf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -630,13 +569,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/weapon/WeaponClassification.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Halfling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="48" column="48" lean-forward="false" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/PositionEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -693,19 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/qualifiedEquipment/weapon/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="63" lean-forward="true" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/consumables/Cosumables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +734,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/AbstractPersonClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+          <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -827,29 +747,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java">
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/PersonFullClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/classes/PersonFullClass.java">
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/HalfElf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="204">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/item/equipment/qualifiedEquipment/weapon/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Dwarf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/Skill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2728#2729#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2784#2785#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/effect/EffectsEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="65" lean-forward="true" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="99" column="19" lean-forward="false" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+          <folding>
+            <element signature="e#4475#4476#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="class#Builder#0;class#Character#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/personRace/Halfling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/project/tiaBird/gameObject/geometryObject/creature/character/skill/SkillEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#2307#2308#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
+            <element signature="e#2385#2386#0" expanded="true" />
+            <element signature="e#2419#2420#0" expanded="true" />
+            <element signature="e#2458#2459#0" expanded="true" />
+            <element signature="e#2496#2497#0" expanded="true" />
           </folding>
         </state>
       </provider>

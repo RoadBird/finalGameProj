@@ -1,5 +1,5 @@
 package com.project.tiaBird.gameObject.effect;
 
 public enum EffectsEnum {
-    Bull_rushed, ENCHANTMENT, Tripped, Poison, Fear, Spell;
+    Bull_rushed, ENCHANTMENT, Tripped, Poison, INTIMIDATE, Spell;
 }

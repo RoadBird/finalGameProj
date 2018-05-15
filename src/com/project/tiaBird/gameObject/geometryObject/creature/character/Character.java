@@ -88,6 +88,12 @@ public class Character extends Creature {
     public void addLanguages(LanguageEnum language) {
         languages.add(language);
     }
+    //TODO количество бонусных языков на старте зависит от бонуса интеллекта
+    public void learningANewLanguage(LanguageEnum language){
+        if(bonusLanguages.contains(language)){
+            this.languages.add(language);
+        }
+    }
     public Set<LanguageEnum> getBonusLanguages() {
         return bonusLanguages;
     }

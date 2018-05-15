@@ -20,4 +20,7 @@ public class Skill {
     public double getSkill(SkillEnum skill){
         return skillsMap.get(skill);
     }
+
+    //TODO запилить сюда синергию
+    //TODO запилить изучение нового языка
 }

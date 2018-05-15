@@ -18,9 +18,9 @@ public class Halfling extends PersonRace implements ModOfDefenceFromEffect, ModO
         character.appendStat(StatEnum.STR, -2);
         character.setSpeed(6);
         character.setSize(CreatureSize.SMALL);
-        character.getMods().appendSkillMod(SkillEnum.Climb, 2);
+        character.getMods().appendSkillMod(SkillEnum.CLIMB, 2);
         character.getMods().appendSkillMod(SkillEnum.Jump, 2);
-        character.getMods().appendSkillMod(SkillEnum.Move_Silently, 2);
+        character.getMods().appendSkillMod(SkillEnum.MOVE_SILENTLY, 2);
         character.getMods().appendModOfSavingThrowFortitude(1);
         character.getMods().appendModOfSavingThrowReflex(1);
         character.getMods().appendModOfSavingThrowWill(1);
@@ -38,7 +38,7 @@ public class Halfling extends PersonRace implements ModOfDefenceFromEffect, ModO
 
     @Override
     public int getModOfDefence(EffectsEnum effect) {
-        if(effect == EffectsEnum.Fear){
+        if(effect == EffectsEnum.INTIMIDATE){
             return 2;
         }
         return 0;
@@ -46,7 +46,7 @@ public class Halfling extends PersonRace implements ModOfDefenceFromEffect, ModO
 
     @Override
     public int getAttackModification(Weapon weapon) {
-        if(weapon.getWeaponType() == WeaponType.THROWING){
+        if(weapon.getWeaponCharacteristics().getWeaponType() == WeaponType.THROWING){
             return 1;
         }
         return 0;

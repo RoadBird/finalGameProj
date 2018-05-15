@@ -25,7 +25,6 @@ public class Dwarf extends PersonRace implements ModOfDefenceFromEffect, ModOfDe
         character.setSize(CreatureSize.MEDIUM);
         character.setSpeed(6);
         character.setVision(CreatureVisionType.Darkvision);
-        character.getSkill().appendSkill(SkillEnum.Feeling_of_stone, 2);
         character.getMods().addModOfDefenceFromSpells(this);
         character.getMods().addModOfDefenceFromEffects(this);
         character.getMods().addModOfAttackAgainsts(this);
