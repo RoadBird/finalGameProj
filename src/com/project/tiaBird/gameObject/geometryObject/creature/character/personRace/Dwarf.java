@@ -29,11 +29,11 @@ public class Dwarf extends PersonRace implements ModOfDefenceFromEffect, ModOfDe
         character.getMods().addModOfDefenceFromEffects(this);
         character.getMods().addModOfAttackAgainsts(this);
         character.getMods().addModOfDefeceFromPersons(this);
-        character.getMods().appendSkillMod(SkillEnum.Appraise, 2);
-        character.getMods().appendSkillMod(SkillEnum.Craft_Armorsmithing, 2);
-        character.getMods().appendSkillMod(SkillEnum.Craft_Weaponsmithing, 2);
-        character.getMods().appendSkillMod(SkillEnum.Craft_Trapmaking, 2);
-        character.getMods().appendSkillMod(SkillEnum.Craft_Varies, 2);
+        character.getMods().appendSkillMod(SkillEnum.APPRAISE, 2);
+        character.getMods().appendSkillMod(SkillEnum.CRAFT_ARMORSMITHING, 2);
+        character.getMods().appendSkillMod(SkillEnum.CRAFT_WEAPONSMITHING, 2);
+        character.getMods().appendSkillMod(SkillEnum.CRAFT_TRAPMAKING, 2);
+        character.getMods().appendSkillMod(SkillEnum.CRAFT_VARIES, 2);
         character.addLanguages(LanguageEnum.Common);
         character.addLanguages(LanguageEnum.Dwarvish);
         character.addBonusLanguages(LanguageEnum.Giant);

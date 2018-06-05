@@ -110,7 +110,7 @@ public class Creature extends GeometryObject {
     private void changeModsWithSize(int count){
         getMods().appendArmorClassMod(count);
         getMods().appendCheckAttackMod(count);
-        getMods().appendSkillMod(SkillEnum.Hide, count*4);
+        getMods().appendSkillMod(SkillEnum.HIDE, count*4);
     }
 
     public CreatureVisionType getVision() {

@@ -26,8 +26,8 @@ public class Gnome extends PersonRace implements ModOfDefenceFromSpell, ModOfCas
         character.getMods().addModOfDefenceFromSpells(this);
         character.getMods().addModOfCastSpells(this);
         character.getMods().addModOfDefeceFromPersons(this);
-        character.getMods().appendSkillMod(SkillEnum.Listen, 2);
-        character.getMods().appendSkillMod(SkillEnum.Craft_Alchemy, 2);
+        character.getMods().appendSkillMod(SkillEnum.LISTEN, 2);
+        character.getMods().appendSkillMod(SkillEnum.CRAFT_ALCHEMY, 2);
         character.addLanguages(LanguageEnum.Common);
         character.addLanguages(LanguageEnum.Gnomish);
         character.addBonusLanguages(LanguageEnum.Dwarvish);

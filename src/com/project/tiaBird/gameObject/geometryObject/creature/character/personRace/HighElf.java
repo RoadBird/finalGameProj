@@ -22,9 +22,9 @@ public class HighElf extends PersonRace implements ModOfDefenceFromEffect, ModOf
         character.getMods().addModOfDefenceFromEffects(this);
         character.getMods().addModOfDefenceFromSpells(this);
         character.setVision(CreatureVisionType.Low_light);
-        character.getMods().appendSkillMod(SkillEnum.Search, 2);
-        character.getMods().appendSkillMod(SkillEnum.Listen, 2);
-        character.getMods().appendSkillMod(SkillEnum.Spot, 2);
+        character.getMods().appendSkillMod(SkillEnum.SEARCH, 2);
+        character.getMods().appendSkillMod(SkillEnum.LISTEN, 2);
+        character.getMods().appendSkillMod(SkillEnum.SPOT, 2);
         character.addLanguages(LanguageEnum.Common);
         character.addLanguages(LanguageEnum.Elvish);
         character.addBonusLanguages(LanguageEnum.Dragon_Turtle);
