@@ -27,13 +27,13 @@ public class Halfling extends PersonRace implements ModOfDefenceFromEffect, ModO
         character.getMods().addModOfDefenceFromEffects(this);
         character.getMods().addModOfAttackWiths(this);
         character.getMods().appendSkillMod(SkillEnum.LISTEN, 2);
-        character.addLanguages(LanguageEnum.Common);
-        character.addLanguages(LanguageEnum.Halfing);
-        character.addBonusLanguages(LanguageEnum.Dwarvish);
-        character.addBonusLanguages(LanguageEnum.Elvish);
-        character.addBonusLanguages(LanguageEnum.Gnomish);
-        character.addBonusLanguages(LanguageEnum.Goblin);
-        character.addBonusLanguages(LanguageEnum.Orc);
+        character.addLanguages(LanguageEnum.COMMON);
+        character.addLanguages(LanguageEnum.HALFING);
+        character.addBonusLanguages(LanguageEnum.DWARVISH);
+        character.addBonusLanguages(LanguageEnum.ELVISH);
+        character.addBonusLanguages(LanguageEnum.GNOMISH);
+        character.addBonusLanguages(LanguageEnum.GOBLIN);
+        character.addBonusLanguages(LanguageEnum.ORC);
     }
 
     @Override

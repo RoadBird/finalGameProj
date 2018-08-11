@@ -24,8 +24,8 @@ public class HalfElf extends PersonRace implements ModOfDefenceFromSpell, ModOfD
         character.getMods().appendSkillMod(SkillEnum.SPOT, 1);
         character.getMods().appendSkillMod(SkillEnum.DIPLOMACY, 2);
         character.getMods().appendSkillMod(SkillEnum.GATHER_INFORMATION, 2);
-        character.addLanguages(LanguageEnum.Common);
-        character.addLanguages(LanguageEnum.Elvish);
+        character.addLanguages(LanguageEnum.COMMON);
+        character.addLanguages(LanguageEnum.ELVISH);
         character.addBonusLanguages(LanguageEnum.ANY);
     }
 

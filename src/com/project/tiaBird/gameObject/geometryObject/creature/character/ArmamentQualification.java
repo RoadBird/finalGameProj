@@ -21,6 +21,7 @@ public class ArmamentQualification {
     public void addQualification(WeaponEquivalent weaponEquivalent){
         weaponQualification.add(weaponEquivalent);
     }
+
     public boolean hasQualification(WeaponEquivalent weaponEquivalent){
         return weaponQualification.contains(weaponEquivalent);
     }

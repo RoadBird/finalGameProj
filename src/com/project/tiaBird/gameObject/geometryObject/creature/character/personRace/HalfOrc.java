@@ -15,12 +15,12 @@ public class HalfOrc extends PersonRace {
         character.setSize(CreatureSize.MEDIUM);
         character.setSpeed(9);
         character.setVision(CreatureVisionType.Darkvision);
-        character.addLanguages(LanguageEnum.Common);
-        character.addLanguages(LanguageEnum.Orc);
-        character.addBonusLanguages(LanguageEnum.Dragon_Turtle);
-        character.addBonusLanguages(LanguageEnum.Giant);
-        character.addBonusLanguages(LanguageEnum.Gnoll);
-        character.addBonusLanguages(LanguageEnum.Goblin);
-        character.addBonusLanguages(LanguageEnum.Abyssal);
+        character.addLanguages(LanguageEnum.COMMON);
+        character.addLanguages(LanguageEnum.ORC);
+        character.addBonusLanguages(LanguageEnum.DRAGON_TURTLE);
+        character.addBonusLanguages(LanguageEnum.GIANT);
+        character.addBonusLanguages(LanguageEnum.GNOLL);
+        character.addBonusLanguages(LanguageEnum.GOBLIN);
+        character.addBonusLanguages(LanguageEnum.ABYSSAL);
     }
 }

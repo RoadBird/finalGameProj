@@ -25,14 +25,14 @@ public class HighElf extends PersonRace implements ModOfDefenceFromEffect, ModOf
         character.getMods().appendSkillMod(SkillEnum.SEARCH, 2);
         character.getMods().appendSkillMod(SkillEnum.LISTEN, 2);
         character.getMods().appendSkillMod(SkillEnum.SPOT, 2);
-        character.addLanguages(LanguageEnum.Common);
-        character.addLanguages(LanguageEnum.Elvish);
-        character.addBonusLanguages(LanguageEnum.Dragon_Turtle);
-        character.addBonusLanguages(LanguageEnum.Gnoll);
-        character.addBonusLanguages(LanguageEnum.Gnomish);
-        character.addBonusLanguages(LanguageEnum.Goblin);
-        character.addBonusLanguages(LanguageEnum.Orc);
-        character.addBonusLanguages(LanguageEnum.Sylph);
+        character.addLanguages(LanguageEnum.COMMON);
+        character.addLanguages(LanguageEnum.ELVISH);
+        character.addBonusLanguages(LanguageEnum.DRAGON_TURTLE);
+        character.addBonusLanguages(LanguageEnum.GNOLL);
+        character.addBonusLanguages(LanguageEnum.GNOMISH);
+        character.addBonusLanguages(LanguageEnum.GOBLIN);
+        character.addBonusLanguages(LanguageEnum.ORC);
+        character.addBonusLanguages(LanguageEnum.SYLPH);
     }
 
 

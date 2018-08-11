@@ -10,7 +10,7 @@ public class Human extends PersonRace {
         super(character);
         character.setSize(CreatureSize.MEDIUM);
         character.setSpeed(9);
-        character.addLanguages(LanguageEnum.Common);
+        character.addLanguages(LanguageEnum.COMMON);
         character.addBonusLanguages(LanguageEnum.ANY);
     }
 }

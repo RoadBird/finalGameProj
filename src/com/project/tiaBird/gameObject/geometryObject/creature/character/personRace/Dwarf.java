@@ -34,13 +34,13 @@ public class Dwarf extends PersonRace implements ModOfDefenceFromEffect, ModOfDe
         character.getMods().appendSkillMod(SkillEnum.CRAFT_WEAPONSMITHING, 2);
         character.getMods().appendSkillMod(SkillEnum.CRAFT_TRAPMAKING, 2);
         character.getMods().appendSkillMod(SkillEnum.CRAFT_VARIES, 2);
-        character.addLanguages(LanguageEnum.Common);
-        character.addLanguages(LanguageEnum.Dwarvish);
-        character.addBonusLanguages(LanguageEnum.Giant);
-        character.addBonusLanguages(LanguageEnum.Goblin);
-        character.addBonusLanguages(LanguageEnum.Orc);
-        character.addBonusLanguages(LanguageEnum.Undercommon);
-        character.addBonusLanguages(LanguageEnum.Terran);
+        character.addLanguages(LanguageEnum.COMMON);
+        character.addLanguages(LanguageEnum.DWARVISH);
+        character.addBonusLanguages(LanguageEnum.GIANT);
+        character.addBonusLanguages(LanguageEnum.GOBLIN);
+        character.addBonusLanguages(LanguageEnum.ORC);
+        character.addBonusLanguages(LanguageEnum.UNDERCOMMON);
+        character.addBonusLanguages(LanguageEnum.TERRAN);
     }
 
     @Override

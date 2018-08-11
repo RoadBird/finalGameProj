@@ -3,11 +3,12 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character;
 import com.project.tiaBird.gameObject.GameObject;
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.Equipment;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Inventory extends GameObject {
-    private List<Equipment> inventory = new LinkedList<>();
+    private List<Equipment> inventory = new ArrayList<>();
 
     public List<Equipment> getInventory() {
         return inventory;
