@@ -8,7 +8,7 @@ import com.project.tiaBird.gameObject.geometryObject.creature.character.modifica
 import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.Human;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.PersonRace;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.trait.Trait;
+import com.project.tiaBird.gameObject.geometryObject.creature.character.feat.FeatList;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.Stat;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
 import com.project.tiaBird.gameObject.geometryObject.item.Money;
@@ -28,7 +28,7 @@ public class Character extends Creature {
     private PersonRace personRace;
     private PersonFullClass personFullClass = new PersonFullClass(this);
     private Skill skill = new Skill();
-    private Set<Trait> traits = new HashSet<>();
+    private FeatList feats = new FeatList(this);
     private ArmamentQualification qualification = new ArmamentQualification();
     private Set<LanguageEnum> languages = new HashSet<>();
     private Set<LanguageEnum> bonusLanguages = new HashSet<>();
@@ -49,7 +49,7 @@ public class Character extends Creature {
 
     private String story;
 
-    private Character() {}
+    public Character() {}
 
 //    public abstract int getSavingThrowFortitude();
 //
@@ -150,6 +150,10 @@ public class Character extends Creature {
 
     public void setAlignment(Alignment alignment) {
         this.alignment = alignment;
+    }
+
+    public FeatList getFeats(){
+        return feats;
     }
 
     public static class Builder{
