@@ -130,6 +130,10 @@ public class Character extends Creature {
         return personFullClass.getFreePointOfSkill();
     }
 
+    public PersonFullClass getPersonFullClass() {
+        return personFullClass;
+    }
+
     //public abstract void addSpell(Spell spell);
 
     public SpellBook getSpellBook(){
