@@ -13,7 +13,7 @@ public abstract class Feat {
         return key;
     }
 
-    public void setKey(String key) {
+    protected void setKey(String key) {
         this.key = key;
     }
 
