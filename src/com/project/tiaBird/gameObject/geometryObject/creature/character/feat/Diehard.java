@@ -2,14 +2,14 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.feat;
 
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 
-public class BlindFight extends Feat {
+public class Diehard extends Feat {
     @Override
     public boolean bonusForWarrior() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean canPersonUse(Character character) {
-        return true;
+        return character.getFeats().contains(Endurance.class.getSimpleName());
     }
 }

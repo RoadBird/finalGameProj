@@ -2,7 +2,7 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.feat;
 
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 
-public class BlindFight extends Feat {
+public class ImprovedUnarmedStrike extends Feat {
     @Override
     public boolean bonusForWarrior() {
         return true;
