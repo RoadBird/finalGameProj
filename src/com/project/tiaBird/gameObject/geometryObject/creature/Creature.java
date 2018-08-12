@@ -120,16 +120,13 @@ public class Creature extends GeometryObject {
         this.vision = vision;
     }
 
-    public Stat getStat(){
+    public Stat getStats(){
         return stat;
     }
-    public int getStat(StatEnum statEnum) {
-        return getStat().getStat(statEnum);
-    }
     public void appendStat(StatEnum stat, int count) {
-        getStat().appendStat(stat, count);
+        getStats().appendStat(stat, count);
     }
     public int getStatModifier(StatEnum statEnum) {
-        return getStat().getStatModifier(statEnum);
+        return getStats().getStatModifier(statEnum);
     }
 }
