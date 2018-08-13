@@ -5,8 +5,8 @@ import com.project.tiaBird.gameObject.geometryObject.creature.character.feat.Fea
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters.WeaponEquivalent;
 
 public class WeaponFocus extends FeatWithKey {
-    public WeaponFocus(String key) {
-        super(key);
+    public WeaponFocus(WeaponEquivalent key) {
+        super(key.name());
     }
 
     @Override

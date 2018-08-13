@@ -22,7 +22,7 @@ public abstract class Feat {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Feat feat = (Feat) o;
-        return getClass().getName().equals(feat.getClass().getSimpleName()) &&
+        return getClass().getSimpleName().equals(feat.getClass().getSimpleName()) &&
                 Objects.equals(key, feat.key);
     }
 

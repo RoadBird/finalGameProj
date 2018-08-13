@@ -1,12 +1,13 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character.feat.general;
 
+import com.project.tiaBird.gameObject.effect.MagicSchoolEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.feat.FeatWithKey;
 
 public class SpellFocus extends FeatWithKey {
 
-    public SpellFocus(String key) {
-        super(key);
+    public SpellFocus(MagicSchoolEnum key) {
+        super(key.name());
     }
 
     @Override

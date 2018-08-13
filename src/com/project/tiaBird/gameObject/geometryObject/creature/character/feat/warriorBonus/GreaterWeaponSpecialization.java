@@ -3,10 +3,11 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.feat.wa
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.classes.Warrior;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.feat.FeatWithKey;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters.WeaponEquivalent;
 
 public class GreaterWeaponSpecialization extends FeatWithKey {
-    public GreaterWeaponSpecialization(String key) {
-        super(key);
+    public GreaterWeaponSpecialization(WeaponEquivalent key) {
+        super(key.name());
     }
 
     @Override

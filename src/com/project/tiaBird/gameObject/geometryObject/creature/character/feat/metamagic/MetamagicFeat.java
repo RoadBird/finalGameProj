@@ -3,7 +3,7 @@ package com.project.tiaBird.gameObject.geometryObject.creature.character.feat.me
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.feat.Feat;
 
-public class MetamagicFeat extends Feat {
+class MetamagicFeat extends Feat {
     @Override
     public boolean bonusForWarrior() {
         return false;

@@ -1,11 +1,11 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character.feat.general;
 
-import com.project.tiaBird.gameObject.effect.MagicSchoolEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.feat.FeatWithKey;
+import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.Qualifier;
 
-public class GreaterSpellFocus extends FeatWithKey {
-    public GreaterSpellFocus(MagicSchoolEnum key) {
+public class MartialWeaponProficiency extends FeatWithKey {
+    public MartialWeaponProficiency(Qualifier key) {
         super(key.name());
     }
 
@@ -16,6 +16,6 @@ public class GreaterSpellFocus extends FeatWithKey {
 
     @Override
     public boolean canPersonUse(Character character) {
-        return character.getFeats().contains(SpellFocus.class.getSimpleName(), getKey());
+        return true;
     }
 }

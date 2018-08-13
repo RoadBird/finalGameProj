@@ -5,8 +5,8 @@ import com.project.tiaBird.gameObject.geometryObject.creature.character.feat.Fea
 import com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters.WeaponEquivalent;
 
 public class ImprovedCritical extends FeatWithKey {
-    public ImprovedCritical(String key) {
-        super(key);
+    public ImprovedCritical(WeaponEquivalent key) {
+        super(key.name());
     }
 
     @Override

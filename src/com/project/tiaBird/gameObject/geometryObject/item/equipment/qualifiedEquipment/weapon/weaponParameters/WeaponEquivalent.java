@@ -1,6 +1,7 @@
 package com.project.tiaBird.gameObject.geometryObject.item.equipment.qualifiedEquipment.weapon.weaponParameters;
 
 public enum WeaponEquivalent {
+        UNARMED_STRIKE, GRAPPLE,
 
         GLOVE, WEAPONLESS,
         DAGGER, PIERCING_DAGGER, SPIKE_GLOVE, LITE_MACE, SICKLE,
