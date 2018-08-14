@@ -22,8 +22,9 @@ import java.util.Set;
 public class Character extends Creature {
 
     private int experiencePoints = 0;
-    private int freePointsOfTraits = 0;
+    private int freePointsOfFeats = 0;
     private int freePointsOfStats = 0;
+    private int freePointOfSkill = 0;
 
     private PersonRace personRace;
     private PersonFullClass personFullClass = new PersonFullClass(this);
@@ -69,6 +70,31 @@ public class Character extends Creature {
 
     // public abstract void appendSkills();
 
+
+    public int getFreePointsOfFeats() {
+        return freePointsOfFeats;
+    }
+
+    public void setFreePointsOfFeats(int freePointsOfFeats) {
+        this.freePointsOfFeats = freePointsOfFeats;
+    }
+
+    public int getFreePointsOfStats() {
+        return freePointsOfStats;
+    }
+
+    public void setFreePointsOfStats(int freePointsOfStats) {
+        this.freePointsOfStats = freePointsOfStats;
+    }
+
+    public int getFreePointOfSkill() {
+        return freePointOfSkill;
+    }
+
+    public void setFreePointOfSkill(int freePointOfSkill) {
+        this.freePointOfSkill = freePointOfSkill;
+    }
+
     public void appendMaxHealf(int count){
         maxHealth += count;
     }
@@ -76,15 +102,14 @@ public class Character extends Creature {
     public void appendMoney(Money money){
         this.money.appendMoney(money);
     }
-
-    //TODO продвижение только на один уровень иначе на 2, но -1 очко опыта
-    //TODO передача управления  игроку для выбора класса
     //TODO добавлять свободные очки черт и навыков
-    //public void appendExperiencePoints(int points);
 
+    //public void appendExperiencePoints(int points);
+    //TODO продвижение только на один уровень иначе на 2, но -1 очко опыта
     public Set<LanguageEnum> getLanguages() {
         return languages;
     }
+    //TODO передача управления  игроку для выбора класса
     public void addLanguages(LanguageEnum language) {
         languages.add(language);
     }
@@ -97,6 +122,7 @@ public class Character extends Creature {
     public Set<LanguageEnum> getBonusLanguages() {
         return bonusLanguages;
     }
+
     public void addBonusLanguages(LanguageEnum bonusLanguage) {
         this.bonusLanguages.add(bonusLanguage);
     }
@@ -120,15 +146,11 @@ public class Character extends Creature {
     public void setInventory(Inventory inventory) {
         this.inventory = inventory;
     }
-
-    public Skill getSkill(){
+    public Skill getSkills(){
         return skill;
     }
-    //TODO Добавить проверку скилла: Д20 + ранг навыка + модификатор параметра + различные модификации
 
-    public int getFreePointOfSkill() {
-        return personFullClass.getFreePointOfSkill();
-    }
+    //TODO Добавить проверку скилла: Д20 + ранг навыка + модификатор параметра + различные модификации
 
     public PersonFullClass getPersonFullClass() {
         return personFullClass;

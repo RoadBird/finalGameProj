@@ -6,7 +6,7 @@ import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Sk
 public class RideByAttack extends WarriorBonusFeat {
     @Override
     public boolean canPersonUse(Character character) {
-        return character.getSkill().getSkill(SkillEnum.RIDE) >= 1
+        return character.getSkills().getSkill(SkillEnum.RIDE) >= 1
                 && character.getFeats().contains(MountedCombat.class.getSimpleName());
     }
 }

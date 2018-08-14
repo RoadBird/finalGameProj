@@ -1,11 +1,9 @@
 package com.project.tiaBird.gameObject.geometryObject.creature.character.classes;
 
-import com.project.tiaBird.exception.AppendException;
 import com.project.tiaBird.gameObject.GameObject;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.Character;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.personRace.Human;
 import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.Skill;
-import com.project.tiaBird.gameObject.geometryObject.creature.character.skill.SkillEnum;
 import com.project.tiaBird.gameObject.geometryObject.creature.stat.StatEnum;
 
 import java.util.HashSet;
@@ -14,22 +12,11 @@ import java.util.Set;
 public class PersonFullClass extends GameObject {
 
     private Character character;
-    private Skill skills;
-    private int freePointOfSkill = 0;
     private int level = 0;
     private Set<AbstractPersonClass> personFullClasses = new HashSet<>();
 
     public PersonFullClass(Character character){
         this.character = character;
-        skills = character.getSkill();
-    }
-
-    public Skill getSkills() {
-        return skills;
-    }
-
-    public int getFreePointOfSkill() {
-        return freePointOfSkill;
     }
 
     public Set<AbstractPersonClass> getPersonFullClasses() {
@@ -40,9 +27,12 @@ public class PersonFullClass extends GameObject {
         personClass.levelUp();
         level++;
         if(level == 1) {
-            freePointOfSkill += (personClass.getPointOfSkillPerLevel() + character.getStatModifier(StatEnum.INT)) * 4;
+            character.setFreePointOfSkill(character.getFreePointOfSkill()
+                    + (personClass.getPointOfSkillPerLevel() + character.getStatModifier(StatEnum.INT)) * 4);
+            character.setFreePointsOfFeats(character.getFreePointsOfFeats() + 1);
             if(character.getPersonRace() instanceof Human){
-                freePointOfSkill += 4;
+                character.setFreePointOfSkill(character.getFreePointOfSkill() + 4);
+                character.setFreePointsOfFeats(character.getFreePointsOfFeats() + 1);
             }
             int hp = personClass.getMaxHP() + character.getStatModifier(StatEnum.CON);
             if(hp <=0) {
@@ -53,9 +43,16 @@ public class PersonFullClass extends GameObject {
             character.setInventory(personClass.getStartInventory());
             character.setArming(personClass.getStartArming());
         } else {
-            freePointOfSkill += personClass.getPointOfSkillPerLevel() + character.getStatModifier(StatEnum.INT);
+            if(level % 3 == 0){
+                character.setFreePointsOfFeats(character.getFreePointsOfFeats() + 1);
+            }
+            if(level % 4 == 0){
+                character.setFreePointsOfStats(character.getFreePointsOfStats() + 1);
+            }
+            character.setFreePointOfSkill(character.getFreePointOfSkill()
+                    +  personClass.getPointOfSkillPerLevel() + character.getStatModifier(StatEnum.INT));
             if(character.getPersonRace() instanceof Human){
-                freePointOfSkill++;
+                character.setFreePointOfSkill(character.getFreePointOfSkill() + 1);
             }
             int hp = personClass.getNewHP() + character.getStatModifier(StatEnum.CON);
             if(hp <=0) {
@@ -110,35 +107,5 @@ public class PersonFullClass extends GameObject {
         return toReturn;
     }
 
-    public void appendSkill(SkillEnum skill) throws AppendException {
-        if(getMaxSkillRang(skill) > skills.getSkill(skill) + 0.5) {
-            if (isClassSkill(skill)) {
-                skills.appendSkill(skill, 1);
-            } else {
-                skills.appendSkill(skill, 0.5);
-            }
-        } else if (getMaxSkillRang(skill) == skills.getSkill(skill) + 0.5 &&
-                !isClassSkill(skill)){
-            skills.appendSkill(skill, 0.5);
-        } else {
-            throw new AppendException("Cannot append skill. Max limited");
-        }
-    }
 
-    private boolean isClassSkill(SkillEnum skill){
-        for(AbstractPersonClass cl : personFullClasses){
-            if(cl.getClassSkills().contains(skill)){
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private double getMaxSkillRang(SkillEnum skill){
-        if(isClassSkill(skill)){
-            return level + 3;
-        } else {
-            return (level + 3) / 2;
-        }
-    }
 }

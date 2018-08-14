@@ -4,9 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Skill {
-    private Map<SkillEnum, Double> skillsMap = new HashMap();
+    private Map<SkillEnum, Double> skillsMap;
 
     public Skill() {
+        skillsMap = new HashMap();
         SkillEnum[] skills = SkillEnum.values();
         for (int i = 0; i < skills.length; i++) {
             skillsMap.put(skills[i], 0.0);
