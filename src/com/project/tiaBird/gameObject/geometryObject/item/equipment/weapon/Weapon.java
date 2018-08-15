@@ -11,6 +11,7 @@ public class Weapon extends Equipment {
     private Roll damage;
     private Roll secondSideDamage;
     private int critChance;
+    private boolean superiority;
 
 
     public Weapon(Money price, double weight, String name) {
